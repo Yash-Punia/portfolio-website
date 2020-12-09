@@ -21,7 +21,7 @@ export const aboutData = {
   paragraphOne: 'I\'m a budding Video Game Developer and an XR Enthusiast',
   paragraphTwo: 'Studying Computer Science Engineering in NIT Hamirpur. An avid learner and passion for implementing current methadologies in new and improvised manner. I am a diligent person and a huge believer of teamwork.',
   paragraphThree: 'I have a lot of experience in XR Development including Augmented Reality and Virtual Reality. I also excel in Game Development, Web Development and Graphic Designing',
-  resume: 'YashPunia_Resume.pdf', // if no resume, the button will not show up
+  resume: '', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA

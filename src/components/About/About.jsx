@@ -4,6 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
+import downloadFile from '../../static/YashPunia_Resume.pdf';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
@@ -48,13 +49,13 @@ const About = () => {
                 <p className="about-wrapper__info-text">
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </p>
-                {resume && (
+                {(
                   <span className="d-flex mt-3">
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href={'/YashPunia_Resume.pdf'}
+                      href={downloadFile}
                       download
                     >
                       Download Resume
