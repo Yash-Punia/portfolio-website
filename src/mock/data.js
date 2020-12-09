@@ -46,8 +46,8 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'projectNavi.png',
-    title: 'Project NAVI',
+    img: 'iris.png',
+    title: 'Project IRIS',
     info: 'A smart AR Assistant which responds to our voice. We can search anything we like and it shows results in AR.',
     info2: 'Integrated with Poly API (by Google) which can augment any 3D object that we speak',
     url: '',
@@ -61,6 +61,15 @@ export const projectsData = [
     info2: 'Add patients, staff and rooms as per your need in the windows application',
     url: '',
     repo: '', // if no repo, the button will not show up
+  },
+  {
+    id: nanoid(),
+    img: 'pandemonium.png',
+    title: 'Pandemonium',
+    info: 'A 3D game developed in Unity3D for GameDev Competition Game of Codes conducted by CodeCops IIIT Una',
+    info2: 'Based on controlling population as there is a spread of a virus. Game features which spread awareness about minimizing the COVID spread.',
+    url: '',
+    repo: 'https://github.com/Yash-Punia/game-of-codes/', // if no repo, the button will not show up
   },
 ];
 

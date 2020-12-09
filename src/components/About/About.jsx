@@ -54,7 +54,7 @@ const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href="../../mock/Resume.pdf"
+                      href='YashPunia_Resume.pdf'
                       download
                     >
                       Download Resume
