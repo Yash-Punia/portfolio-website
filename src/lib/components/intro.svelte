@@ -1,5 +1,5 @@
 <script>
-	const profileUrl = 'public/images/Profile1.png';
+	const profileUrl = 'images/Profile1.png';
 	let y;
 
 </script>
