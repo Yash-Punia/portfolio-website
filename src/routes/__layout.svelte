@@ -33,7 +33,7 @@
 	:global(body) {
 		overflow: hidden;
 		font-family: 'Source Sans Pro';
-		background: url('images/bg-1.png');
+		background: url('bg-1.png');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 125%;
