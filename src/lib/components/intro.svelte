@@ -1,5 +1,5 @@
 <script>
-	const profileUrl = 'Profile1.png';
+	const profileUrl = '../assets/Profile1.png';
 	let y;
 
 </script>
@@ -23,7 +23,7 @@
 	</div>
 </div>
 
-<style lang="postcss">
+<style>
 	.intro-container {
 		min-height: 100vh;
 		display: flex;
