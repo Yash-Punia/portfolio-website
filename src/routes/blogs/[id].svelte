@@ -1,8 +1,6 @@
 <script context="module">
 	export async function load({ page }) {
-		let blog;
-
-		const blogIdQuery = `&q=[[at(document.id,"${page.params.id}")]]`;
+		console.log(page.params.id);
 		//get latest master ref
 		const refUrl = 'https://yashpunia.cdn.prismic.io/api/v2';
 		const refResponse = await fetch(refUrl);
@@ -10,68 +8,88 @@
 		const masterRef = refResponseJson.refs[0].ref;
 
 		//get the blogs
-		const docUrl =
-			'https://yashpunia.cdn.prismic.io/api/v2/documents/search?ref=' + masterRef + blogIdQuery;
+		const docUrl = `https://yashpunia.cdn.prismic.io/api/v2/documents/search?ref=${masterRef}&q=[[at(document.id,"${page.params.id}")]]`;
 		const docResponse = await fetch(docUrl);
 		const docResponseJson = await docResponse.json();
 
-		blog = docResponseJson.results[0].data;
+		const blog = docResponseJson.results[0];
 
-		console.log(blog);
-
-		return {
-			props: {
-				blog
-			}
-		};
+		return { props: { blog } };
 	}
 </script>
 
 <script>
+	import Icon from 'svelte-awesome/components/Icon.svelte';
+	import { arrowLeft } from 'svelte-awesome/icons';
+
 	export let blog;
+	console.log(blog);
+
+	const getDate = (datetime) => {
+		const date = datetime.split('T')[0];
+		const year = date.split('-')[0];
+		const day = date.split('-')[2];
+		const month = date.split('-')[1];
+		return day + '/' + month + '/' + year;
+	};
 </script>
 
-<div class="blog-container">
-	<div class="heading">
-		<h1>{blog.title[0].text}</h1>
-	</div>
-	<div class="body">
-		{#each blog.body as item}
-			{#if item.type == 'paragraph'}
-				<p>{item.text}</p>
-			{:else if item.type == 'heading3'}
-				<h3>{item.text}</h3>
-			{/if}
-		{/each}
+<svelte:head>
+	<title>Yash Punia</title>
+</svelte:head>
+
+<div class="grid">
+	<div class="glass-element">
+		<div class="container">
+			<a href="/blogs" style="position: absolute; top: 2em; left: 2em; color: #1ee8b7">
+				<Icon
+					data={arrowLeft}
+					scale="3"
+				/>
+			</a>
+			<h1>{blog.data.title[0].text}</h1>
+			<img src={blog.data.image.url} alt="blog-post" />
+			<div class='blogBody'>
+				{#each blog.data.body as item}
+					{#if item.type == 'paragraph'}
+						<p>{item.text}</p>
+					{:else if item.type == 'heading3'}
+						<h3>{item.text}</h3>
+					{/if}
+				{/each}
+			</div>
+		</div>
 	</div>
 </div>
 
-<style>
-	.blog-container {
-		width: 80%;
-		margin: 3rem auto;
-	}
-
-	.body {
-		margin-top: 6rem;
-		font-size: 2rem;
-		border: 1px solid rgba(255, 255, 255, 0.7);
-		background: rgba(255, 255, 255, 0.5);
-		border-radius: 1rem;
-		backdrop-filter: blur(24px);
-		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        padding: 2rem 1rem;
-	}
-
-	.body * {
-		margin: 1rem 0;
-	}
-
-	.heading {
-		color: #222;
-		opacity: 0.8;
-		text-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
-		font-size: 3rem;
-		font-weight: 600;
+<style lang="scss">
+	.container {
+		width: 80vw;
+		height: 100%;
+		padding: 2em 3em;
+		color: white;
+		background: #0e1117dd;
+		border-radius: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h1 {
+			color: white;
+			text-align: center;
+			font-family: 'Montserrat';
+		}
+		img {
+			margin: 2em 0;
+			width: 10em;
+			height: 10em;
+		}
+		p {
+			font-size: 1.2em;
+			margin: 0.5em 0;
+		}
+		h3 {
+			font-size: 1.5em;
+			margin: 1em 0;
+		}
 	}
 </style>

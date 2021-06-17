@@ -15,15 +15,20 @@
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-svelte3": "^3.2.0",
+    "node-sass": "^6.0.0",
     "prettier": "~2.2.1",
     "prettier-plugin-svelte": "^2.2.0",
     "svelte": "^3.34.0",
+    "svelte-preprocess": "^4.7.3",
     "tailwindcss": "^2.1.4"
   },
   "type": "module",
   "dependencies": {
     "graphql": "^15.5.0",
     "graphql-request": "^3.4.0",
-    "snarkdown": "^2.0.0"
+    "sass": "^1.35.1",
+    "snarkdown": "^2.0.0",
+    "svelte-awesome": "^2.3.2",
+    "three": "^0.129.0"
   }
 }

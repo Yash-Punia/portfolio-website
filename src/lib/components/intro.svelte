@@ -23,7 +23,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="postcss">
 	.intro-container {
 		min-height: 100vh;
 		display: flex;
