@@ -113,6 +113,7 @@
 	}
 
 	.circle-4 {
+		z-index: -1;
 		position: fixed;
 		bottom: 20vh;
 		left: 5vw;

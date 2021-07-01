@@ -17,6 +17,7 @@
 					<a href="/about">More About Me</a>
 					<a href="/blogs">Blogs</a>
 					<a href="/projects">Projects</a>
+					<a href="/game" target="__blank">Play Game!</a>
 				</div>
 			</div>
 			<img src={profileUrl} alt="profile-pic" />
