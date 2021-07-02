@@ -14,7 +14,6 @@ const _endEvent = { type: 'end' };
 class OrbitControls extends EventDispatcher {
 	constructor(object, domElement) {
 		super();
-
 		if (domElement === undefined)
 			console.warn('THREE.OrbitControls: The second parameter "domElement" is now mandatory.');
 		if (domElement === document)
