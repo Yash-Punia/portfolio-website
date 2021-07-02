@@ -28,6 +28,7 @@
     "graphql-request": "^3.4.0",
     "sass": "^1.35.1",
     "snarkdown": "^2.0.0",
-    "svelte-awesome": "^2.3.2"
+    "svelte-awesome": "^2.3.2",
+    "three": "^0.130.0"
   }
 }
