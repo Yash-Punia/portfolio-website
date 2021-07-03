@@ -14,38 +14,46 @@ export default class App {
 
     generateBalls() {
 
-        const getRandomColor = () => {
-            let colors = [0x25e0ba, 0x7a88d8, 0xc362f6];
-            return colors[Math.floor(Math.random() * colors.length)];
-        }
+        const gradientTexture = new THREE.TextureLoader().load('gradient.png');
 
         for(let i=0;i<10;i++) {
             const ball = new THREE.Mesh(
-                new THREE.SphereBufferGeometry(0.2,7,7),
-                new THREE.MeshLambertMaterial({color: getRandomColor()})
+                new THREE.SphereBufferGeometry(Math.random()*0.2,20,20),
+                new THREE.MeshBasicMaterial({map: gradientTexture})
             );
             const x = (Math.random() * 4) - 2;
-            const y = (Math.random()) + 1;
-            const z = -(Math.random() * 4);
+            const y = (Math.random())+0.5;
+            const z = -(Math.random() * 4) - 1;
             ball.position.set(x,y,z);
             this.scene.add(ball);
         }
     }
 
+    onSelect(e) {
+        console.log(e);
+    }
+
     setupXR() {
+        this.currentSession = null;
         this.renderer.xr.enabled = true;
-        document.body.appendChild( ARButton.createButton(this.renderer) );
+        const self = this;
+        navigator.xr.requestSession('immersive-ar').then( async session => {
+            self.renderer.xr.setReferenceSpaceType('local');
+            await self.renderer.xr.setSession( session );
+            this.currentSession = session;
+        } );
+
+        const controller = this.renderer.xr.getController(0);
+        controller.addEventListener('select', () => {
+            alert('tapped!')
+        });
+        this.scene.add(controller);
+        this.controller = controller;
+        
     }
 
     init() {
         this.scene = new THREE.Scene();
-        // this.mesh = new THREE.Mesh(
-        //     new THREE.BoxBufferGeometry(3,3,3,3,3,3),
-        //     new THREE.MeshLambertMaterial({color: 0xff0066})
-        // );
-        this.mesh = this.createText(`Hi! I'm Yash Punia`, 1);
-        this.mesh.position.set(0,0,-5);
-        this.scene.add(this.mesh);
 
         //Set up light
         const ambientLight = new THREE.AmbientLight(0xffffff, 0.6);
@@ -60,7 +68,7 @@ export default class App {
         const cameraWidth = 960;
         const cameraHeight = cameraWidth / aspectRatio;
 
-        this.camera = new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight, 0.1,1000);
+        this.camera = new THREE.PerspectiveCamera(60,window.innerWidth/window.innerHeight, 0.1,1000);
 
         this.camera.position.set(0, 0, 0);
         this.camera.lookAt(0, 0, 0);
