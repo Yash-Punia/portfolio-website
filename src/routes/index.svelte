@@ -1,5 +1,14 @@
 <script>
-	const profileUrl = 'Profile4.jpg';
+	import { state } from '$lib/stores/stateStores';
+	import { projects } from '$lib/stores/projectStores';
+	import { blogPosts } from '$lib/stores/blogStores';
+	import { spinner } from 'svelte-awesome/icons';
+	import Icon from 'svelte-awesome/components/Icon.svelte';
+	import About from '$lib/components/about.svelte';
+	import Home from '$lib/components/home.svelte';
+	import Navbar from '$lib/components/navbar.svelte';
+	import Projects from '$lib/components/projects.svelte';
+
 </script>
 
 <svelte:head>
@@ -9,17 +18,16 @@
 <div class="grid">
 	<div class="glass-element">
 		<div class="container">
-			<div class="name-container">
-				<p>Hello I'm</p>
-				<h1>Yash Punia</h1>
-				<p>XR Developer | Game Developer</p>
-				<div class="buttons">
-					<a href="/about">More About Me</a>
-					<a href="/projects">Projects</a>
-					<a href="/game" target="__blank">Play a Game!</a>
-				</div>
-			</div>
-			<img src={profileUrl} alt="profile-pic" />
+				{#if $state != 'home'}
+					<Navbar />
+				{/if}
+				{#if $state == 'home'}
+					<Home />
+				{:else if $state == 'more'}
+					<About />
+				{:else if $state == 'projects'}
+					<Projects />
+				{/if}
 		</div>
 	</div>
 </div>
@@ -27,53 +35,13 @@
 <style lang="scss">
 	@import '../lib/global.scss';
 	.container {
-		padding: 0 8rem;
+		position: relative;
+		transition: all 0.3s;
+		padding: 2rem 3rem;
 		color: white;
 		background: #0e1117dd;
 		width: 100%;
 		height: 100%;
 		border-radius: 2rem;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-
-		.name-container {
-			font-size: 24px;
-			p {
-				font-weight: 200;
-			}
-			* {
-				margin: 0.5em 0;
-			}
-		}
-
-		img {
-			width: 20rem;
-			height: 20rem;
-			object-fit: cover;
-			border-radius: 100%;
-			border: 0.5rem solid $green-transparent;
-		}
-
-		.buttons {
-			display: grid;
-			grid-template-columns: 1fr;
-			a {
-				width: 20rem;
-				font-size: 0.8em;
-				text-decoration: none;
-				color: white;
-				background: #1ee8b722;
-				box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-				width: fit-content;
-				padding: 0.5rem 1rem;
-				border-radius: 2rem;
-				transition: ease-out 0.3s;
-			}
-			a:hover {
-				background: $green;
-				color: black;
-			}
-		}
 	}
 </style>

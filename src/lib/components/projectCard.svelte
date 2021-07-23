@@ -14,12 +14,6 @@
 </script>
 
 <div class="container">
-	<a href="/" style="position: absolute; top: 2em; left: 2em; color: #1ee8b7">
-		<Icon
-			data={arrowLeft}
-			scale="3"
-		/>
-	</a>
 	<div class="imageContainer">
 		<img src={info.project_image.url} alt={info.project_name[0].text} />
 	</div>

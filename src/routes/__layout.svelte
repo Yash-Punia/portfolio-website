@@ -1,24 +1,4 @@
-<script context="module">
-	export const load = async ({ page }) => ({
-		props: {
-			key: page.path
-		}
-	});
-</script>
-
-<script>
-	import PageTransition from '$lib/components/PageTransition.svelte';
-	import { onMount } from 'svelte';
-	export let key;
-
-	onMount(() => {
-		const circles = document.querySelectorAll('.circle')
-	})
-</script>
-
-<PageTransition refresh={key}>
-	<slot />
-</PageTransition>
+<slot />
 <div class="circle circle-1" />
 <div class="circle circle-2" />
 <div class="circle circle-3" />
@@ -52,14 +32,14 @@
 	}
 
 	:global(.glass-element) {
-		min-width: 60%;
-		height: 100%;
+		width: fit-content;
 		background: linear-gradient(to bottom right, #1ee8b766, #7a88d866);
 		backdrop-filter: blur(10px);
 		border-radius: 2rem;
 		text-decoration: none;
 		padding: 0.5rem;
 		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s;
 	}
 
 	:global(::-webkit-scrollbar) {

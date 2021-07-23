@@ -1,8 +1,10 @@
 <script>
 	import { onMount } from 'svelte';
+	import Icon from 'svelte-awesome/components/Icon.svelte';
+	import { refresh } from 'svelte-awesome/icons';
 	import App from '$lib/threejs/arPortfolio.js';
 
-	let xrSupported;
+	let xrSupported = null;
 
 	onMount(() => {
 		if ('xr' in navigator) {
@@ -18,7 +20,11 @@
 	});
 </script>
 
-{#if xrSupported != true}
+{#if xrSupported == null}
+	<Icon data={refresh} spin />
+{:else if xrSupported == true}
+	<div class="xrButton" />
+{:else}
 	<div>
 		<h1>XR is not available on this device. Kindly switch to Chrome for AR experience</h1>
 	</div>
