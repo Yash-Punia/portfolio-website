@@ -5,7 +5,7 @@
 	import { fade } from 'svelte/transition';
 </script>
 
-<div in:fade={{delay:500}} class="home-container">
+<div class="home-container">
 	<p>Hello I'm</p>
 	<h1>Yash Punia</h1>
 	<p>I make <strong>AR apps</strong> and <strong>Video Games</strong></p>
@@ -82,6 +82,19 @@
 					color: black;
 				}
 			}
+		}
+	}
+
+	@media only screen and (max-width: 1366px) {
+		.home-container {
+			font-size: 18px;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		.home-container {
+			font-size: 14px;
+			max-width: 80%;
 		}
 	}
 </style>

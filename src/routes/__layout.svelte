@@ -32,7 +32,6 @@
 	}
 
 	:global(.glass-element) {
-		width: fit-content;
 		background: linear-gradient(to bottom right, #1ee8b766, #7a88d866);
 		backdrop-filter: blur(10px);
 		border-radius: 2rem;
@@ -116,5 +115,6 @@
 	}
 
 	@media only screen and (max-width: 768px) {
+		
 	}
 </style>

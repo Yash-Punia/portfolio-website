@@ -1,5 +1,8 @@
 <script>
     import { state } from '$lib/stores/stateStores';
+	import { arrowLeft } from 'svelte-awesome/icons';
+	import Icon from 'svelte-awesome/components/Icon.svelte';
+
     let tabs = [];
 	const handleClick = (tabName, tabDiv) => {
         if(tabName == $state)
@@ -12,17 +15,27 @@
     };
 </script>
 
+<div on:click={e=>{handleClick("home",e.target)}} bind:this={tabs[0]} class="homeTab">
+	<Icon data={arrowLeft} scale=2/>
+</div>
 <div class="navbar">
-	<div on:click={e=>{handleClick("home",e.target)}} bind:this={tabs[0]} class="tab">Home</div>
 	<div on:click={e=>{handleClick("more",e.target)}} bind:this={tabs[1]} class="tab selected">About</div>
 	<div on:click={e=>{handleClick("projects",e.target)}} bind:this={tabs[2]} class="tab">Projects</div>
 </div>
 
 <style lang="scss">
 	@import '../global.scss';
+	.homeTab {
+			width: fit-content;
+			transition: all 0.3s;
+			cursor: pointer;
+			&:hover {
+				transform: translateX(-0.5em);
+			}
+		}
 	.navbar {
 		display: flex;
-		font-size: 1.3em;
+		font-size: 20px;
 		position: absolute;
 		top: -2em;
 		right: 0;
@@ -44,6 +57,14 @@
 			background: #0f1c1f;
 			color: white;
 			border: 2px solid $green;
+		}
+	}
+	@media only screen and (max-width: 1366px) {
+		.navbar {
+			font-size: 18px;
+			.tab {
+				padding: 0.5em 1em;
+			}
 		}
 	}
 </style>

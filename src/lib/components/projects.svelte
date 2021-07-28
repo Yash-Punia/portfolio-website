@@ -4,7 +4,7 @@
 	import { projects } from '$lib/stores/projectStores';
 </script>
 
-<div in:fade={{delay: 500}} class="project-container">
+<div class="project-container">
 	<h1>See my work</h1>
 	<div class="project-grid">
 		{#each $projects as project}

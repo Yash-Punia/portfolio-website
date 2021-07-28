@@ -16,7 +16,7 @@
 	];
 </script>
 
-<div in:fly={{x:-50, delay: 500}} out:fly={{x:-50}} class="timeline">
+<div class="timeline">
 	{#each education as item}
 		<div class="timeline-item">
 			<h3>{item.time}</h3>

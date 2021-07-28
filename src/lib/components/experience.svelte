@@ -22,7 +22,7 @@
 	];
 </script>
 
-<div in:fly={{x:50, delay: 500}} out:fly={{x:50}} class="timeline">
+<div class="timeline">
 	{#each experience as item}
 		<div class="timeline-item">
 			<h3>{item.title}</h3>
@@ -79,6 +79,20 @@
 			width: 2px;
 			height: 100%;
 			background: $circle-blue;
+		}
+	}
+	
+	@media only screen and (max-width: 1366px) {
+		.timeline {
+			font-size: 18px;
+			.timeline-item {
+				h1 {
+					font-size: 0.8em;
+				}
+				h2 {
+					font-size: 0.5em;
+				}
+			}
 		}
 	}
 </style>

@@ -168,4 +168,16 @@
 	.selected {
 		color: $circle-purple;
 	}
+
+	@media only screen and (max-width: 1366px) {
+		.more-container {
+			width: 70vw;
+			font-size: 18px;
+			img {
+			width: 20rem;
+			height: 20rem;
+			object-fit: cover;
+		}
+		}
+	}
 </style>
