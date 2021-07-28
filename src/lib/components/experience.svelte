@@ -54,12 +54,13 @@
 				border-radius: 100%;
 			}
 			h3 {
+				font-size: 1em;
 				font-weight: 400;
 				color: $circle-purple;
 			}
 			h1 {
 				font-weight: 600;
-				font-size: 1.2em;
+				font-size: 1em;
 				span {
 					font-weight: 500;
 					font-size: 0.75em;
@@ -85,12 +86,18 @@
 	@media only screen and (max-width: 1366px) {
 		.timeline {
 			font-size: 18px;
+		}
+	}
+
+	@media only screen and (max-width: 512px) {
+		.timeline {
+			font-size: 18px;
+			&::before {
+				left: -0.5em;
+			}
 			.timeline-item {
-				h1 {
-					font-size: 0.8em;
-				}
-				h2 {
-					font-size: 0.5em;
+				&::before {
+					left: -0.65em;
 				}
 			}
 		}

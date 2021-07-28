@@ -2,7 +2,7 @@
 	import Education from '$lib/components/education.svelte';
 	import Experience from '$lib/components/experience.svelte';
 	const profileUrl = 'Profile3.jpg';
-    import {fade} from 'svelte/transition';
+	import { fade } from 'svelte/transition';
 
 	const skillList = [
 		'C#',
@@ -90,7 +90,7 @@
 <style lang="scss">
 	@import '../global.scss';
 	.more-container {
-        width: 60vw;
+		width: 60vw;
 		border-radius: 2rem;
 		display: grid;
 		gap: 1em;
@@ -113,7 +113,7 @@
 				font-weight: 300;
 				margin-top: 3rem;
 				text-align: justify;
-				font-size: 0.8em;
+				font-size: 0.9em;
 			}
 			h3 {
 				margin: 2em 0 1em 0;
@@ -171,13 +171,21 @@
 
 	@media only screen and (max-width: 1366px) {
 		.more-container {
-			width: 70vw;
 			font-size: 18px;
 			img {
-			width: 20rem;
-			height: 20rem;
-			object-fit: cover;
+				width: 15rem;
+				height: 20rem;
+				object-fit: cover;
+			}
 		}
+	}
+
+	@media only screen and (max-width: 512px) {
+		.more-container {
+			width: 70vw;
+			font-size: 14px;
+			display: flex;
+			flex-direction: column;
 		}
 	}
 </style>

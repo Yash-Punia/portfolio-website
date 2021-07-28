@@ -91,10 +91,16 @@
 		}
 	}
 
-	@media only screen and (max-width: 768px) {
+	// @media only screen and (max-width: 768px) {
+	// 	.home-container {
+	// 		font-size: 14px;
+	// 		max-width: 80%;
+	// 	}
+	// }
+
+	@media only screen and (max-width: 512px) {
 		.home-container {
 			font-size: 14px;
-			max-width: 80%;
 		}
 	}
 </style>

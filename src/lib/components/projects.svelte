@@ -16,7 +16,7 @@
 <style lang="scss">
 	@import '../../lib/global.scss';
 	.project-container {
-		width: 60vw;
+		width: 70vw;
 		h1 {
 			color: white;
 			text-align: center;
@@ -28,6 +28,14 @@
 			place-items: center;
 			grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
 			gap: 5em;
+		}
+	}
+
+	@media only screen and (max-width: 512px) {
+		.project-container {
+			.project-grid {
+				grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+			}
 		}
 	}
 </style>

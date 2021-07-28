@@ -47,13 +47,9 @@
 				background: $circle-blue;
 				border-radius: 100%;
 			}
-			h3 {
-				font-weight: 400;
-				color: $circle-purple;
-			}
 			h1 {
 				font-weight: 600;
-				font-size: 1.2em;
+				font-size: 1em;
 				span {
 					font-weight: 500;
 					font-size: 0.75em;
@@ -64,6 +60,11 @@
 				font-weight: 400;
 				opacity: 0.8;
 			}
+			h3 {
+				font-size: 1em;
+				font-weight: 400;
+				color: $circle-purple;
+			}
 		}
 		&::before {
 			top: 0;
@@ -73,6 +74,26 @@
 			width: 2px;
 			height: 100%;
 			background: $circle-blue;
+		}
+	}
+
+	@media only screen and (max-width: 1366px) {
+		.timeline {
+			font-size: 18px;
+		}
+	}
+
+	@media only screen and (max-width: 512px) {
+		.timeline {
+			font-size: 18px;
+			&::before {
+				left: -0.5em;
+			}
+			.timeline-item {
+				&::before {
+					left: -0.65em;
+				}
+			}
 		}
 	}
 </style>

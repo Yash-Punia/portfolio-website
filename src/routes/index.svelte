@@ -44,4 +44,10 @@
 		height: 100%;
 		border-radius: 2rem;
 	}
+	
+	@media only screen and (max-width: 512px) {
+		.container {
+			padding: 1rem;
+		}
+	}
 </style>

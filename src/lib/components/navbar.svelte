@@ -61,9 +61,11 @@
 	}
 	@media only screen and (max-width: 1366px) {
 		.navbar {
+			top: -1.5em;
+
 			font-size: 18px;
 			.tab {
-				padding: 0.5em 1em;
+				padding: 0.8em 1em;
 			}
 		}
 	}
