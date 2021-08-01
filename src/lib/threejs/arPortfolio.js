@@ -4,12 +4,16 @@ import { ARButton } from './ARButton.js';
 export default class App {
     constructor() {
         this.init();
-
+        this.generateBalls();
         this.setupXR();
 
-        this.generateBalls();
-
         window.addEventListener('resize', this.onWindowResize.bind(this), false);
+    }
+
+    startAR()
+    {
+        navigator.xr.requestSession('immersive-ar').then(this.onSessionStarted.bind(this));
+        document.body.appendChild(this.renderer.domElement)
     }
 
     generateBalls() {
@@ -29,10 +33,6 @@ export default class App {
         }
     }
 
-    onSelect(e) {
-        console.log(e);
-    }
-
     async onSessionStarted(session) {
         this.renderer.xr.setReferenceSpaceType('local');
         await this.renderer.xr.setSession(session);
@@ -42,13 +42,12 @@ export default class App {
     setupXR() {
         this.currentSession = null;
         this.renderer.xr.enabled = true;
-        const self = this;
-        navigator.xr.requestSession('immersive-ar').then(this.onSessionStarted.bind(this));
 
         const controller = this.renderer.xr.getController(0);
         controller.addEventListener('select', () => {
             alert('tapped!')
         });
+
         this.scene.add(controller);
         this.controller = controller;
 
@@ -67,10 +66,8 @@ export default class App {
 
         //Set up camera
         const aspectRatio = window.innerWidth / window.innerHeight;
-        const cameraWidth = 960;
-        const cameraHeight = cameraWidth / aspectRatio;
 
-        this.camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+        this.camera = new THREE.PerspectiveCamera(60, aspectRatio, 0.1, 1000);
 
         this.camera.position.set(0, 0, 0);
         this.camera.lookAt(0, 0, 0);
@@ -79,8 +76,6 @@ export default class App {
         this.renderer = new THREE.WebGLRenderer({ antialias: true });
         this.renderer.setSize(window.innerWidth, window.innerHeight);
         this.renderer.setAnimationLoop(this.animate.bind(this));
-        document.body.appendChild(this.renderer.domElement)
-
     }
 
     animate() {
