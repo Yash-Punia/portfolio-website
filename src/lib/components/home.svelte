@@ -1,9 +1,7 @@
 <script>
 	import { state } from '$lib/stores/stateStores';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import twitter from 'svelte-awesome/icons/twitter'
-	import linkedin from 'svelte-awesome/icons/linkedin'
-	import github from 'svelte-awesome/icons/github'
+	import { twitter, linkedin, github} from 'svelte-awesome/icons/'
 </script>
 
 <div class="home-container">
@@ -15,8 +13,7 @@
 	<div class="buttons">
 		<div
 			on:click={() => {
-				// state.set("more")
-				console.log("You clicked more");
+				state.set("more")
 				
 			}}
 		>

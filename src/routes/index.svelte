@@ -1,9 +1,9 @@
 <script>
 	import { state } from '$lib/stores/stateStores';
-	// import About from '$lib/components/about.svelte';
+	import About from '$lib/components/about.svelte';
 	import Home from '$lib/components/home.svelte';
-	// import Navbar from '$lib/components/navbar.svelte';
-	// import Projects from '$lib/components/projects.svelte';
+	import Navbar from '$lib/components/navbar.svelte';
+	import Projects from '$lib/components/projects.svelte';
 
 </script>
 
@@ -14,17 +14,16 @@
 <div class="grid">
 	<div class="glass-element">
 		<div class="container">
-			<p>Hello</p>
-				<!-- {#if $state != 'home'} -->
-					<!-- <Navbar /> -->
-				<!-- {/if} -->
-				<!-- {#if $state == 'home'} -->
-					<!-- <Home /> -->
-				<!-- {:else if $state == 'more'} -->
-					<!-- <About /> -->
-				<!-- {:else if $state == 'projects'} -->
-					<!-- <Projects /> -->
-				<!-- {/if} -->
+				{#if $state != 'home'}
+					<Navbar />
+				{/if}
+				{#if $state == 'home'}
+					<Home />
+				{:else if $state == 'more'}
+					<About />
+				{:else if $state == 'projects'}
+					<Projects />
+				{/if}
 		</div>
 	</div>
 </div>
