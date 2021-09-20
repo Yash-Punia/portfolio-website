@@ -30696,9 +30696,9 @@ function init(settings) {
     amp: false,
     dev: false,
     entry: {
-      file: "/./_app/start-c88d451d.js",
+      file: "/./_app/start-c9713fbb.js",
       css: ["/./_app/assets/start-a8cd1609.css", "/./_app/assets/vendor-83544678.css"],
-      js: ["/./_app/start-c88d451d.js", "/./_app/chunks/vendor-e92375a5.js"]
+      js: ["/./_app/start-c9713fbb.js", "/./_app/chunks/vendor-e92375a5.js"]
     },
     fetched: void 0,
     floc: false,
@@ -30794,7 +30794,7 @@ var module_lookup = {
     return ar;
   })
 };
-var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/./_app/pages/__layout.svelte-0b2e0ec3.js", "css": ["/./_app/assets/pages/__layout.svelte-497364af.css", "/./_app/assets/vendor-83544678.css"], "js": ["/./_app/pages/__layout.svelte-0b2e0ec3.js", "/./_app/chunks/vendor-e92375a5.js"], "styles": null }, "src/routes/__error.svelte": { "entry": "/./_app/pages/__error.svelte-4e6b6686.js", "css": ["/./_app/assets/pages/__error.svelte-a2155a8b.css", "/./_app/assets/vendor-83544678.css"], "js": ["/./_app/pages/__error.svelte-4e6b6686.js", "/./_app/chunks/vendor-e92375a5.js"], "styles": null }, "src/routes/index.svelte": { "entry": "/./_app/pages/index.svelte-756b4b7c.js", "css": ["/./_app/assets/pages/index.svelte-05a79a66.css", "/./_app/assets/vendor-83544678.css", "/./_app/assets/experience-463ff09a.css"], "js": ["/./_app/pages/index.svelte-756b4b7c.js", "/./_app/chunks/vendor-e92375a5.js", "/./_app/chunks/experience-173bda50.js"], "styles": null }, "src/routes/about.svelte": { "entry": "/./_app/pages/about.svelte-1bbfbc91.js", "css": ["/./_app/assets/pages/about.svelte-97b10dbf.css", "/./_app/assets/vendor-83544678.css", "/./_app/assets/experience-463ff09a.css"], "js": ["/./_app/pages/about.svelte-1bbfbc91.js", "/./_app/chunks/vendor-e92375a5.js", "/./_app/chunks/experience-173bda50.js"], "styles": null }, "src/routes/blogs/index.svelte": { "entry": "/./_app/pages/blogs/index.svelte-d4cb7b85.js", "css": ["/./_app/assets/pages/blogs/index.svelte-5dccbc71.css", "/./_app/assets/vendor-83544678.css"], "js": ["/./_app/pages/blogs/index.svelte-d4cb7b85.js", "/./_app/chunks/vendor-e92375a5.js"], "styles": null }, "src/routes/blogs/[id].svelte": { "entry": "/./_app/pages/blogs/[id].svelte-896f27cb.js", "css": ["/./_app/assets/pages/blogs/[id].svelte-3e07d515.css", "/./_app/assets/vendor-83544678.css"], "js": ["/./_app/pages/blogs/[id].svelte-896f27cb.js", "/./_app/chunks/vendor-e92375a5.js"], "styles": null }, "src/routes/ar.svelte": { "entry": "/./_app/pages/ar.svelte-8df7f878.js", "css": ["/./_app/assets/pages/ar.svelte-811f31ee.css", "/./_app/assets/vendor-83544678.css"], "js": ["/./_app/pages/ar.svelte-8df7f878.js", "/./_app/chunks/vendor-e92375a5.js"], "styles": null } };
+var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "/./_app/pages/__layout.svelte-0b2e0ec3.js", "css": ["/./_app/assets/pages/__layout.svelte-497364af.css", "/./_app/assets/vendor-83544678.css"], "js": ["/./_app/pages/__layout.svelte-0b2e0ec3.js", "/./_app/chunks/vendor-e92375a5.js"], "styles": null }, "src/routes/__error.svelte": { "entry": "/./_app/pages/__error.svelte-4e6b6686.js", "css": ["/./_app/assets/pages/__error.svelte-a2155a8b.css", "/./_app/assets/vendor-83544678.css"], "js": ["/./_app/pages/__error.svelte-4e6b6686.js", "/./_app/chunks/vendor-e92375a5.js"], "styles": null }, "src/routes/index.svelte": { "entry": "/./_app/pages/index.svelte-1fe79089.js", "css": ["/./_app/assets/pages/index.svelte-05a79a66.css", "/./_app/assets/vendor-83544678.css", "/./_app/assets/experience-463ff09a.css"], "js": ["/./_app/pages/index.svelte-1fe79089.js", "/./_app/chunks/vendor-e92375a5.js", "/./_app/chunks/experience-173bda50.js"], "styles": null }, "src/routes/about.svelte": { "entry": "/./_app/pages/about.svelte-1bbfbc91.js", "css": ["/./_app/assets/pages/about.svelte-97b10dbf.css", "/./_app/assets/vendor-83544678.css", "/./_app/assets/experience-463ff09a.css"], "js": ["/./_app/pages/about.svelte-1bbfbc91.js", "/./_app/chunks/vendor-e92375a5.js", "/./_app/chunks/experience-173bda50.js"], "styles": null }, "src/routes/blogs/index.svelte": { "entry": "/./_app/pages/blogs/index.svelte-d4cb7b85.js", "css": ["/./_app/assets/pages/blogs/index.svelte-5dccbc71.css", "/./_app/assets/vendor-83544678.css"], "js": ["/./_app/pages/blogs/index.svelte-d4cb7b85.js", "/./_app/chunks/vendor-e92375a5.js"], "styles": null }, "src/routes/blogs/[id].svelte": { "entry": "/./_app/pages/blogs/[id].svelte-896f27cb.js", "css": ["/./_app/assets/pages/blogs/[id].svelte-3e07d515.css", "/./_app/assets/vendor-83544678.css"], "js": ["/./_app/pages/blogs/[id].svelte-896f27cb.js", "/./_app/chunks/vendor-e92375a5.js"], "styles": null }, "src/routes/ar.svelte": { "entry": "/./_app/pages/ar.svelte-8df7f878.js", "css": ["/./_app/assets/pages/ar.svelte-811f31ee.css", "/./_app/assets/vendor-83544678.css"], "js": ["/./_app/pages/ar.svelte-8df7f878.js", "/./_app/chunks/vendor-e92375a5.js"], "styles": null } };
 async function load_component(file) {
   return {
     module: await module_lookup[file](),
@@ -31436,6 +31436,40 @@ var __error = /* @__PURE__ */ Object.freeze({
   "default": _error
 });
 var state = writable2("home");
+var projects = writable2([]);
+var fetchProjects = async () => {
+  const refUrl = "https://yashpunia.cdn.prismic.io/api/v2";
+  const refResponse = await fetch(refUrl);
+  const refResponseJson = await refResponse.json();
+  const masterRef = refResponseJson.refs[0].ref;
+  const docUrl = "https://yashpunia.cdn.prismic.io/api/v2/documents/search?ref=" + masterRef;
+  const docResponse = await fetch(docUrl);
+  const docResponseJson = await docResponse.json();
+  let projectsFetched = [];
+  docResponseJson.results.map((element, index2) => {
+    if (element.type === "projects")
+      projectsFetched.push(element);
+  });
+  projects.set(projectsFetched);
+};
+fetchProjects();
+var blogPosts = writable2([]);
+var fetchBlogPosts = async () => {
+  const refUrl = "https://yashpunia.cdn.prismic.io/api/v2";
+  const refResponse = await fetch(refUrl);
+  const refResponseJson = await refResponse.json();
+  const masterRef = refResponseJson.refs[0].ref;
+  const docUrl = "https://yashpunia.cdn.prismic.io/api/v2/documents/search?ref=" + masterRef;
+  const docResponse = await fetch(docUrl);
+  const docResponseJson = await docResponse.json();
+  let blogPostsFetched = [];
+  docResponseJson.results.map((element, index2) => {
+    if (element.type === "blog_posts")
+      blogPostsFetched.push(element);
+  });
+  blogPosts.set(blogPostsFetched);
+};
+fetchBlogPosts();
 var css$b = {
   code: '.timeline.svelte-u962qs.svelte-u962qs{position:relative;height:fit-content;font-size:24px}.timeline.svelte-u962qs .timeline-item.svelte-u962qs{margin-bottom:1em;position:relative;font-weight:500}.timeline.svelte-u962qs .timeline-item.svelte-u962qs::before{content:"";width:0.5em;height:0.5em;position:absolute;top:0.3em;left:-1.2em;background:#7a88d8;border-radius:100%}.timeline.svelte-u962qs .timeline-item h1.svelte-u962qs{font-weight:600;font-size:1em}.timeline.svelte-u962qs .timeline-item h1 span.svelte-u962qs{font-weight:500;font-size:0.75em}.timeline.svelte-u962qs .timeline-item h2.svelte-u962qs{font-size:1em;font-weight:400;opacity:0.8}.timeline.svelte-u962qs .timeline-item h3.svelte-u962qs{font-size:1em;font-weight:400;color:#c362f6}.timeline.svelte-u962qs.svelte-u962qs::before{top:0;left:-1em;content:"";position:absolute;width:2px;height:100%;background:#7a88d8}@media only screen and (max-width: 1366px){.timeline.svelte-u962qs.svelte-u962qs{font-size:18px}}@media only screen and (max-width: 512px){.timeline.svelte-u962qs.svelte-u962qs{font-size:18px}.timeline.svelte-u962qs.svelte-u962qs::before{left:-0.5em}.timeline.svelte-u962qs .timeline-item.svelte-u962qs::before{left:-0.65em}}',
   map: `{"version":3,"file":"education.svelte","sources":["education.svelte"],"sourcesContent":["<script>\\r\\n\\timport { fly } from 'svelte/transition';\\r\\n\\tlet education = [\\r\\n\\t\\t{\\r\\n\\t\\t\\tinstituteName: 'NIT Hamirpur',\\r\\n\\t\\t\\tdegree: 'BTech',\\r\\n\\t\\t\\ttime: '2018-Present',\\r\\n\\t\\t\\tresult: 'CGPA 9.46'\\r\\n\\t\\t},\\r\\n\\t\\t{\\r\\n\\t\\t\\tinstituteName: 'DAV Public School (Sec 14, GGN)',\\r\\n\\t\\t\\tdegree: 'Class 12',\\r\\n\\t\\t\\ttime: '2018',\\r\\n\\t\\t\\tresult: '95.6%'\\r\\n\\t\\t}\\r\\n\\t];\\r\\n<\/script>\\r\\n\\r\\n<div class=\\"timeline\\">\\r\\n\\t{#each education as item}\\r\\n\\t\\t<div class=\\"timeline-item\\">\\r\\n\\t\\t\\t<h3>{item.time}</h3>\\r\\n\\t\\t\\t<h1>{item.instituteName} - <span>({item.degree})</span></h1>\\r\\n\\t\\t\\t<h2>{item.result}</h2>\\r\\n\\t\\t</div>\\r\\n\\t{/each}\\r\\n</div>\\r\\n\\r\\n<style lang=\\"scss\\">.timeline {\\n  position: relative;\\n  height: fit-content;\\n  font-size: 24px;\\n}\\n.timeline .timeline-item {\\n  margin-bottom: 1em;\\n  position: relative;\\n  font-weight: 500;\\n}\\n.timeline .timeline-item::before {\\n  content: \\"\\";\\n  width: 0.5em;\\n  height: 0.5em;\\n  position: absolute;\\n  top: 0.3em;\\n  left: -1.2em;\\n  background: #7a88d8;\\n  border-radius: 100%;\\n}\\n.timeline .timeline-item h1 {\\n  font-weight: 600;\\n  font-size: 1em;\\n}\\n.timeline .timeline-item h1 span {\\n  font-weight: 500;\\n  font-size: 0.75em;\\n}\\n.timeline .timeline-item h2 {\\n  font-size: 1em;\\n  font-weight: 400;\\n  opacity: 0.8;\\n}\\n.timeline .timeline-item h3 {\\n  font-size: 1em;\\n  font-weight: 400;\\n  color: #c362f6;\\n}\\n.timeline::before {\\n  top: 0;\\n  left: -1em;\\n  content: \\"\\";\\n  position: absolute;\\n  width: 2px;\\n  height: 100%;\\n  background: #7a88d8;\\n}\\n\\n@media only screen and (max-width: 1366px) {\\n  .timeline {\\n    font-size: 18px;\\n  }\\n}\\n@media only screen and (max-width: 512px) {\\n  .timeline {\\n    font-size: 18px;\\n  }\\n  .timeline::before {\\n    left: -0.5em;\\n  }\\n  .timeline .timeline-item::before {\\n    left: -0.65em;\\n  }\\n}</style>\\r\\n"],"names":[],"mappings":"AA4BmB,SAAS,4BAAC,CAAC,AAC5B,QAAQ,CAAE,QAAQ,CAClB,MAAM,CAAE,WAAW,CACnB,SAAS,CAAE,IAAI,AACjB,CAAC,AACD,uBAAS,CAAC,cAAc,cAAC,CAAC,AACxB,aAAa,CAAE,GAAG,CAClB,QAAQ,CAAE,QAAQ,CAClB,WAAW,CAAE,GAAG,AAClB,CAAC,AACD,uBAAS,CAAC,4BAAc,QAAQ,AAAC,CAAC,AAChC,OAAO,CAAE,EAAE,CACX,KAAK,CAAE,KAAK,CACZ,MAAM,CAAE,KAAK,CACb,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,KAAK,CACV,IAAI,CAAE,MAAM,CACZ,UAAU,CAAE,OAAO,CACnB,aAAa,CAAE,IAAI,AACrB,CAAC,AACD,uBAAS,CAAC,cAAc,CAAC,EAAE,cAAC,CAAC,AAC3B,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,GAAG,AAChB,CAAC,AACD,uBAAS,CAAC,cAAc,CAAC,EAAE,CAAC,IAAI,cAAC,CAAC,AAChC,WAAW,CAAE,GAAG,CAChB,SAAS,CAAE,MAAM,AACnB,CAAC,AACD,uBAAS,CAAC,cAAc,CAAC,EAAE,cAAC,CAAC,AAC3B,SAAS,CAAE,GAAG,CACd,WAAW,CAAE,GAAG,CAChB,OAAO,CAAE,GAAG,AACd,CAAC,AACD,uBAAS,CAAC,cAAc,CAAC,EAAE,cAAC,CAAC,AAC3B,SAAS,CAAE,GAAG,CACd,WAAW,CAAE,GAAG,CAChB,KAAK,CAAE,OAAO,AAChB,CAAC,AACD,qCAAS,QAAQ,AAAC,CAAC,AACjB,GAAG,CAAE,CAAC,CACN,IAAI,CAAE,IAAI,CACV,OAAO,CAAE,EAAE,CACX,QAAQ,CAAE,QAAQ,CAClB,KAAK,CAAE,GAAG,CACV,MAAM,CAAE,IAAI,CACZ,UAAU,CAAE,OAAO,AACrB,CAAC,AAED,OAAO,IAAI,CAAC,MAAM,CAAC,GAAG,CAAC,YAAY,MAAM,CAAC,AAAC,CAAC,AAC1C,SAAS,4BAAC,CAAC,AACT,SAAS,CAAE,IAAI,AACjB,CAAC,AACH,CAAC,AACD,OAAO,IAAI,CAAC,MAAM,CAAC,GAAG,CAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACzC,SAAS,4BAAC,CAAC,AACT,SAAS,CAAE,IAAI,AACjB,CAAC,AACD,qCAAS,QAAQ,AAAC,CAAC,AACjB,IAAI,CAAE,MAAM,AACd,CAAC,AACD,uBAAS,CAAC,4BAAc,QAAQ,AAAC,CAAC,AAChC,IAAI,CAAE,OAAO,AACf,CAAC,AACH,CAAC"}`
@@ -31582,23 +31616,6 @@ var ProjectCard = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 
 ${``}`;
 });
-var projects = writable2([]);
-var fetchProjects = async () => {
-  const refUrl = "https://yashpunia.cdn.prismic.io/api/v2";
-  const refResponse = await fetch(refUrl);
-  const refResponseJson = await refResponse.json();
-  const masterRef = refResponseJson.refs[0].ref;
-  const docUrl = "https://yashpunia.cdn.prismic.io/api/v2/documents/search?ref=" + masterRef;
-  const docResponse = await fetch(docUrl);
-  const docResponseJson = await docResponse.json();
-  let projectsFetched = [];
-  docResponseJson.results.map((element, index2) => {
-    if (element.type === "projects")
-      projectsFetched.push(element);
-  });
-  projects.set(projectsFetched);
-};
-fetchProjects();
 var css$5 = {
   code: '.project-container.svelte-1y6g321.svelte-1y6g321{width:70vw}.project-container.svelte-1y6g321 h1.svelte-1y6g321{color:white;text-align:center;font-family:"Montserrat"}.project-container.svelte-1y6g321 .project-grid.svelte-1y6g321{display:grid;margin-top:5em;place-items:center;grid-template-columns:repeat(auto-fit, minmax(20em, 1fr));gap:5em}@media only screen and (max-width: 512px){.project-container.svelte-1y6g321 .project-grid.svelte-1y6g321{grid-template-columns:repeat(auto-fit, minmax(15em, 1fr))}}',
   map: `{"version":3,"file":"projects.svelte","sources":["projects.svelte"],"sourcesContent":["<script>\\r\\n\\timport ProjectCard from '$lib/components/projectCard.svelte';\\r\\n\\timport Icon from 'svelte-awesome/components/Icon.svelte';\\r\\n\\timport {spinner} from 'svelte-awesome/icons';\\r\\n\\timport { projects } from '$lib/stores/projectStores';\\r\\n<\/script>\\r\\n\\r\\n<div class=\\"project-container\\">\\r\\n\\t<h1>See my work</h1>\\r\\n\\t<div class=\\"project-grid\\">\\r\\n\\t\\t{#each $projects as project}\\r\\n\\t\\t\\t<ProjectCard info={project.data} />\\r\\n\\t\\t{:else}\\r\\n\\t\\t\\t<Icon data={spinner} pulse/>\\r\\n\\t\\t{/each}\\r\\n\\t</div>\\r\\n</div>\\r\\n\\r\\n<style lang=\\"scss\\">.project-container {\\n  width: 70vw;\\n}\\n.project-container h1 {\\n  color: white;\\n  text-align: center;\\n  font-family: \\"Montserrat\\";\\n}\\n.project-container .project-grid {\\n  display: grid;\\n  margin-top: 5em;\\n  place-items: center;\\n  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));\\n  gap: 5em;\\n}\\n\\n@media only screen and (max-width: 512px) {\\n  .project-container .project-grid {\\n    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));\\n  }\\n}</style>\\r\\n"],"names":[],"mappings":"AAkBmB,kBAAkB,8BAAC,CAAC,AACrC,KAAK,CAAE,IAAI,AACb,CAAC,AACD,iCAAkB,CAAC,EAAE,eAAC,CAAC,AACrB,KAAK,CAAE,KAAK,CACZ,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,YAAY,AAC3B,CAAC,AACD,iCAAkB,CAAC,aAAa,eAAC,CAAC,AAChC,OAAO,CAAE,IAAI,CACb,UAAU,CAAE,GAAG,CACf,WAAW,CAAE,MAAM,CACnB,qBAAqB,CAAE,OAAO,QAAQ,CAAC,CAAC,OAAO,IAAI,CAAC,CAAC,GAAG,CAAC,CAAC,CAC1D,GAAG,CAAE,GAAG,AACV,CAAC,AAED,OAAO,IAAI,CAAC,MAAM,CAAC,GAAG,CAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACzC,iCAAkB,CAAC,aAAa,eAAC,CAAC,AAChC,qBAAqB,CAAE,OAAO,QAAQ,CAAC,CAAC,OAAO,IAAI,CAAC,CAAC,GAAG,CAAC,CAAC,AAC5D,CAAC,AACH,CAAC"}`
@@ -31614,7 +31631,7 @@ var Projects = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 var css$4 = {
   code: ".container.svelte-b3qm9o{position:relative;transition:all 0.3s;padding:2rem 3rem;color:#fff;background:#0e1117dd;width:100%;height:100%;border-radius:2rem}@media only screen and (max-width: 512px){.container.svelte-b3qm9o{padding:1rem}}",
-  map: `{"version":3,"file":"index.svelte","sources":["index.svelte"],"sourcesContent":["<script>\\n\\timport { state } from '$lib/stores/stateStores';\\n\\timport Icon from 'svelte-awesome/components/Icon.svelte';\\n\\timport About from '$lib/components/about.svelte';\\n\\timport Home from '$lib/components/home.svelte';\\n\\timport Navbar from '$lib/components/navbar.svelte';\\n\\timport Projects from '$lib/components/projects.svelte';\\n\\n<\/script>\\n\\n<svelte:head>\\n\\t<title>Yash Punia</title>\\n</svelte:head>\\n\\n<div class=\\"grid\\">\\n\\t<div class=\\"glass-element\\">\\n\\t\\t<div class=\\"container\\">\\n\\t\\t\\t\\t{#if $state != 'home'}\\n\\t\\t\\t\\t\\t<Navbar />\\n\\t\\t\\t\\t{/if}\\n\\t\\t\\t\\t{#if $state == 'home'}\\n\\t\\t\\t\\t\\t<Home />\\n\\t\\t\\t\\t{:else if $state == 'more'}\\n\\t\\t\\t\\t\\t<About />\\n\\t\\t\\t\\t{:else if $state == 'projects'}\\n\\t\\t\\t\\t\\t<Projects />\\n\\t\\t\\t\\t{/if}\\n\\t\\t</div>\\n\\t</div>\\n</div>\\n\\n<style lang=\\"scss\\">.container {\\n  position: relative;\\n  transition: all 0.3s;\\n  padding: 2rem 3rem;\\n  color: #fff;\\n  background: #0e1117dd;\\n  width: 100%;\\n  height: 100%;\\n  border-radius: 2rem;\\n}\\n\\n@media only screen and (max-width: 512px) {\\n  .container {\\n    padding: 1rem;\\n  }\\n}</style>\\n"],"names":[],"mappings":"AA+BmB,UAAU,cAAC,CAAC,AAC7B,QAAQ,CAAE,QAAQ,CAClB,UAAU,CAAE,GAAG,CAAC,IAAI,CACpB,OAAO,CAAE,IAAI,CAAC,IAAI,CAClB,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,SAAS,CACrB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,aAAa,CAAE,IAAI,AACrB,CAAC,AAED,OAAO,IAAI,CAAC,MAAM,CAAC,GAAG,CAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACzC,UAAU,cAAC,CAAC,AACV,OAAO,CAAE,IAAI,AACf,CAAC,AACH,CAAC"}`
+  map: `{"version":3,"file":"index.svelte","sources":["index.svelte"],"sourcesContent":["<script>\\n\\timport { state } from '$lib/stores/stateStores';\\n\\timport { projects } from '$lib/stores/projectStores';\\n\\timport { blogPosts } from '$lib/stores/blogStores';\\n\\timport { spinner } from 'svelte-awesome/icons';\\n\\timport Icon from 'svelte-awesome/components/Icon.svelte';\\n\\timport About from '$lib/components/about.svelte';\\n\\timport Home from '$lib/components/home.svelte';\\n\\timport Navbar from '$lib/components/navbar.svelte';\\n\\timport Projects from '$lib/components/projects.svelte';\\n\\n<\/script>\\n\\n<svelte:head>\\n\\t<title>Yash Punia</title>\\n</svelte:head>\\n\\n<div class=\\"grid\\">\\n\\t<div class=\\"glass-element\\">\\n\\t\\t<div class=\\"container\\">\\n\\t\\t\\t\\t{#if $state != 'home'}\\n\\t\\t\\t\\t\\t<Navbar />\\n\\t\\t\\t\\t{/if}\\n\\t\\t\\t\\t{#if $state == 'home'}\\n\\t\\t\\t\\t\\t<Home />\\n\\t\\t\\t\\t{:else if $state == 'more'}\\n\\t\\t\\t\\t\\t<About />\\n\\t\\t\\t\\t{:else if $state == 'projects'}\\n\\t\\t\\t\\t\\t<Projects />\\n\\t\\t\\t\\t{/if}\\n\\t\\t</div>\\n\\t</div>\\n</div>\\n\\n<style lang=\\"scss\\">.container {\\n  position: relative;\\n  transition: all 0.3s;\\n  padding: 2rem 3rem;\\n  color: #fff;\\n  background: #0e1117dd;\\n  width: 100%;\\n  height: 100%;\\n  border-radius: 2rem;\\n}\\n\\n@media only screen and (max-width: 512px) {\\n  .container {\\n    padding: 1rem;\\n  }\\n}</style>\\n"],"names":[],"mappings":"AAkCmB,UAAU,cAAC,CAAC,AAC7B,QAAQ,CAAE,QAAQ,CAClB,UAAU,CAAE,GAAG,CAAC,IAAI,CACpB,OAAO,CAAE,IAAI,CAAC,IAAI,CAClB,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,SAAS,CACrB,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,aAAa,CAAE,IAAI,AACrB,CAAC,AAED,OAAO,IAAI,CAAC,MAAM,CAAC,GAAG,CAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACzC,UAAU,cAAC,CAAC,AACV,OAAO,CAAE,IAAI,AACf,CAAC,AACH,CAAC"}`
 };
 var Routes = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $state, $$unsubscribe_state;
