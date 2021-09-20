@@ -17,7 +17,7 @@ export default class App {
     }
 
     generateBalls() {
-
+z
         const gradientTexture = new THREE.TextureLoader().load('gradient.png');
 
         for (let i = 0; i < 10; i++) {

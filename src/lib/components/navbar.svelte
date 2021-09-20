@@ -27,11 +27,7 @@
 	@import '../global.scss';
 	.homeTab {
 			width: fit-content;
-			transition: all 0.3s;
 			cursor: pointer;
-			&:hover {
-				transform: translateX(-0.5em);
-			}
 		}
 	.navbar {
 		display: flex;
@@ -47,15 +43,11 @@
 			padding: 1em;
 			margin-left: 1em;
 			transition: all 0.3s;
-			&:hover {
-				background: #0f1c1f;
-				color: white;
-				border: 2px solid $green;
-			}
+			box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
 		}
 		.selected {
-			background: #0f1c1f;
-			color: white;
+			background: $background;
+			color: $fontColor;
 			border: 2px solid $green;
 		}
 	}

@@ -1,8 +1,5 @@
 <script>
 	import { state } from '$lib/stores/stateStores';
-	import { projects } from '$lib/stores/projectStores';
-	import { blogPosts } from '$lib/stores/blogStores';
-	import { spinner } from 'svelte-awesome/icons';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
 	import About from '$lib/components/about.svelte';
 	import Home from '$lib/components/home.svelte';
@@ -38,8 +35,8 @@
 		position: relative;
 		transition: all 0.3s;
 		padding: 2rem 3rem;
-		color: white;
-		background: #0e1117dd;
+		color: $fontColor;
+		background: $containerBackground;
 		width: 100%;
 		height: 100%;
 		border-radius: 2rem;

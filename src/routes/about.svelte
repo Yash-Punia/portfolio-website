@@ -102,8 +102,8 @@
 	@import '../lib/global.scss';
 	.container {
 		padding: 2rem 3rem;
-		color: white;
-		background: #0e1117dd;
+		color: $fontColor;
+		background: $containerBackground;
 		width: 80vw;
 		height: 100%;
 		border-radius: 2rem;

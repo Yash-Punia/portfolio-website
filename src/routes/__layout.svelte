@@ -18,7 +18,7 @@
 
 	:global(body) {
 		font-family: 'Work Sans', 'Roboto', 'Source Sans Pro';
-		background: $dark;
+		background: $background;
 		background-position: top right;
 		background-repeat: no-repeat;
 		min-height: 100vh;
@@ -46,7 +46,7 @@
 	}
 
 	:global(::-webkit-scrollbar-track) {
-		background-color: $dark;
+		background-color: $background;
 	}
 
 	:global(::-webkit-scrollbar-thumb) {
