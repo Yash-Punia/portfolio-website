@@ -14,16 +14,17 @@
 <div class="grid">
 	<div class="glass-element">
 		<div class="container">
+			<p>Hello</p>
 				<!-- {#if $state != 'home'} -->
 					<!-- <Navbar /> -->
 				<!-- {/if} -->
-				{#if $state == 'home'}
-					<Home />
+				<!-- {#if $state == 'home'} -->
+					<!-- <Home /> -->
 				<!-- {:else if $state == 'more'} -->
 					<!-- <About /> -->
 				<!-- {:else if $state == 'projects'} -->
 					<!-- <Projects /> -->
-				{/if}
+				<!-- {/if} -->
 		</div>
 	</div>
 </div>
