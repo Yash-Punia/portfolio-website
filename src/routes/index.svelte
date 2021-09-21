@@ -1,7 +1,6 @@
 <script>
 	import { state } from '$lib/stores/stateStores';
 	import { projects } from '$lib/stores/projectStores';
-	import { blogPosts } from '$lib/stores/blogStores';
 	import { spinner } from 'svelte-awesome/icons';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
 	import About from '$lib/components/about.svelte';
