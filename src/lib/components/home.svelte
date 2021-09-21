@@ -10,7 +10,6 @@
 	<h1>Yash Punia</h1>
 	<p>I make <strong>AR apps</strong> and <strong>Video Games</strong></p>
 	<p><strong class="highlight">GSoC 2020</strong> at Catrobat | President (Team ISTE)</p>
-	<p>Check out my games on <a href="https://yashpunia.itch.io/"  class="highlight"><strong>itch.io</strong></a></p>
 	<div class="buttons">
 		<div
 			on:click={() => {
@@ -45,7 +44,6 @@
 		font-size: 24px;
         .highlight {
             color:$green;
-			text-decoration: none;
         }
 		p {
 			font-weight: 200;

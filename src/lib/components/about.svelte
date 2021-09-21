@@ -79,7 +79,7 @@
 		<div class="buttons">
 			<a
 				target="_blank"
-				href="https://drive.google.com/file/d/1LqvEyZ4BSR01hWaAtpge8FQS25xny_1Z/view?usp=sharing"
+				href="https://drive.google.com/file/d/1ForiKFcQ-2Dk3WuZjlXMNERoGYFo5eLG/view?usp=sharing"
 				class="resumeButton">Download Resume</a
 			>
 			<a href="/contact">Contact Me</a>

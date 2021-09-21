@@ -38,8 +38,8 @@
 		position: relative;
 		transition: all 0.3s;
 		padding: 2rem 3rem;
-		color: $fontColor;
-		background: $containerBackground;
+		color: white;
+		background: #0e1117dd;
 		width: 100%;
 		height: 100%;
 		border-radius: 2rem;
