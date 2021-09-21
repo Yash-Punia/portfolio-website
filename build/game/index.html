@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+
+		
+
+		<link rel="modulepreload" href="/_app/start-c59202e5.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-5dea8d44.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-be857777.js">
+		<link rel="modulepreload" href="/_app/pages/game.svelte-cb3563b1.js">
+		<link rel="modulepreload" href="/_app/chunks/App-f36c275e.js">
+		<link rel="stylesheet" href="/_app/assets/start-61d1577b.css">
+		<link rel="stylesheet" href="/_app/assets/vendor-ef2c9ea5.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-7ab39d0b.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__error.svelte-ac8c801b.css">
+
+		<script type="module">
+			import { start } from "/_app/start-c59202e5.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-be857777.js"),
+						import("/_app/pages/game.svelte-cb3563b1.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/game",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<div id="score" class="svelte-1hh30x">0</div>
+
+<div class="container controls svelte-1hh30x"><div class="up svelte-1hh30x"><svg version="1.1" class="fa-icon  svelte-1dof0an" width="54.857142857142854" height="64" role="presentation" viewBox="0 0 1536 1792" style="font-size: 4em">
+    <path key="path-0" d="M1284 895q0-27-18-45l-362-362-91-91q-18-18-45-18t-45 18l-91 91-362 362q-18 18-18 45t18 45l91 91q18 18 45 18t45-18l189-189v502q0 26 19 45t45 19h128q26 0 45-19t19-45v-502l189 189q19 19 45 19t45-19l91-91q18-18 18-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+      
+      
+  </svg>
+		<p class="svelte-1hh30x">Accelerate</p></div>
+	<div class="down svelte-1hh30x"><svg version="1.1" class="fa-icon  svelte-1dof0an" width="54.857142857142854" height="64" role="presentation" viewBox="0 0 1536 1792" style="font-size: 4em">
+    <path key="path-0" d="M1284 897q0-27-18-45l-91-91q-18-18-45-18t-45 18l-189 189v-502q0-26-19-45t-45-19h-128q-26 0-45 19t-19 45v502l-189-189q-19-19-45-19t-45 19l-91 91q-18 18-18 45t18 45l362 362 91 91q18 18 45 18t45-18l91-91 362-362q18-18 18-45zM1536 896q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z"></path>
+      
+      
+  </svg>
+		<p class="svelte-1hh30x">Decelerate</p></div></div>
+
+<div id="reset" class="container reset svelte-1hh30x"><p class="svelte-1hh30x">Press &#39;R&#39; to reset game</p>
+</div>
+<div class="circle circle-1 svelte-18o01hb"></div>
+<div class="circle circle-2 svelte-18o01hb"></div>
+<div class="circle circle-3 svelte-18o01hb"></div>
+<div class="circle circle-4 svelte-18o01hb"></div>
+
+
+
+			
+		</div>
+	</body>
+</html>

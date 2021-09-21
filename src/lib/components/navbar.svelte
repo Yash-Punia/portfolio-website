@@ -1,7 +1,7 @@
 <script>
     import { state } from '$lib/stores/stateStores';
-	import { arrowLeft } from 'svelte-awesome/icons';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
+	import arrowLeft from 'svelte-awesome/icons/arrow-left';
 
     let tabs = [];
 	const handleClick = (tabName, tabDiv) => {
@@ -29,9 +29,6 @@
 			width: fit-content;
 			transition: all 0.3s;
 			cursor: pointer;
-			&:hover {
-				transform: translateX(-0.5em);
-			}
 		}
 	.navbar {
 		display: flex;

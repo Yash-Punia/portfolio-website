@@ -3,7 +3,7 @@
 	import About from '$lib/components/about.svelte';
 	import Home from '$lib/components/home.svelte';
 	import Navbar from '$lib/components/navbar.svelte';
-	// import Projects from '$lib/components/projects.svelte';
+	import Projects from '$lib/components/projects.svelte';
 
 </script>
 
@@ -22,7 +22,7 @@
 				{:else if $state == 'more'}
 					<About />
 				{:else if $state == 'projects'}
-					<!-- <Projects /> -->
+					<Projects />
 				{/if}
 		</div>
 	</div>

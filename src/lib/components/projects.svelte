@@ -1,7 +1,7 @@
 <script>
 	import ProjectCard from '$lib/components/projectCard.svelte';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import {spinner} from 'svelte-awesome/icons';
+	import spinner from 'svelte-awesome/icons/spinner';
 	import { projects } from '$lib/stores/projectStores';
 </script>
 

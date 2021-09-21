@@ -1,7 +1,7 @@
 <script>
 	import { scale } from 'svelte/transition';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import { close, arrowLeft } from 'svelte-awesome/icons';
+	import  close  from 'svelte-awesome/icons/close';
 	export let info;
 	let showDetails = false;
 	const showProjectDetails = () => {

@@ -3,7 +3,7 @@
 	import Experience from '$lib/components/experience.svelte';
 	const profileUrl = 'Profile3.jpg';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import {arrowLeft} from 'svelte-awesome/icons';
+	import arrowLeft from 'svelte-awesome/icons/arrow-left';
 
 	const skillList = [
 		'C#',
@@ -91,7 +91,7 @@
 						href="https://drive.google.com/file/d/1ForiKFcQ-2Dk3WuZjlXMNERoGYFo5eLG/view?usp=sharing"
 						class="resumeButton">Download Resume</a
 					>
-					<a href="/contact">Contact Me</a>
+					<a href="mailto:puniayash@gmail.com">Contact Me</a>
 				</div>
 			</div>
 		</div>
