@@ -32,7 +32,8 @@
 	}
 
 	:global(.glass-element) {
-		background: linear-gradient(to bottom right, #1ee8b766, #7a88d866);
+		max-width: 80%;
+		background: linear-gradient(to bottom right, $glass-gradient-to, $glass-gradient-from);
 		backdrop-filter: blur(10px);
 		border-radius: 2rem;
 		text-decoration: none;
@@ -50,11 +51,11 @@
 	}
 
 	:global(::-webkit-scrollbar-thumb) {
-		background-color: $green-transparent;
+		background-color: $primary-transparent;
 	}
 
 	.circle {
-		background: radial-gradient(at 0% 30%, $circle-green 20%, $circle-blue, $circle-purple);
+		background: radial-gradient(at 0% 30%, $circle-one 20%, $circle-two, $circle-three);
 		border-radius: 100%;
 		animation-name: circle;
 		animation-duration: 4s;

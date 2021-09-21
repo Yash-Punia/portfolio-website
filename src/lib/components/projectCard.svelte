@@ -1,16 +1,5 @@
 <script>
-	import { scale } from 'svelte/transition';
-	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import  close  from 'svelte-awesome/icons/close';
 	export let info;
-	let showDetails = false;
-	const showProjectDetails = () => {
-		showDetails = true;
-	};
-
-	const hideProjectDetails = () => {
-		showDetails = false;
-	};
 </script>
 
 <div class="container">
@@ -18,27 +7,21 @@
 		<img src={info.project_image.url} alt={info.project_name[0].text} />
 	</div>
 	<h2>{info.project_name[0].text}</h2>
-	<div on:click={showProjectDetails} class="projectButton">View Project</div>
+	<p>{info.project_description[0].text}</p>
+	<div class="links">
+		{#if info.hosted_link.url != null}
+			<a href={info.hosted_link.url} class="seeLive" target="_blank">See Live</a>
+		{/if}
+		{#if info.github_link.url != null}
+			<a href={info.github_link.url} class="sourceCode" target="_blank">Source Code</a>
+		{/if}
+	</div>
+	<div class="techStack">
+		{#each info.tech_stack as tech}
+			<div class="tech">{tech.text}</div>
+		{/each}
+	</div>
 </div>
-
-{#key showDetails}
-	{#if showDetails == true}
-		<div transition:scale class="projectDetailsContainer">
-			<div class="projectDetails">
-				<div on:click={hideProjectDetails} class="closeButton">
-					<Icon data={close} scale="3" style="color: #1ee8b7" />
-				</div>
-				<img src={info.project_image.url} alt={info.project_name[0].text} />
-				<div class="projectContent">
-					<h1>{info.project_name[0].text}</h1>
-					{#each info.project_description as item}
-						<p>{item.text}</p>
-					{/each}
-				</div>
-			</div>
-		</div>
-	{/if}
-{/key}
 
 <style lang="scss">
 	@import '../global.scss';
@@ -52,7 +35,7 @@
 			padding: 0.5em;
 			height: 20em;
 			border-radius: 1em;
-			background: $green-transparent;
+			background: $primary-transparent;
 			img {
 				width: 100%;
 				height: 100%;
@@ -60,72 +43,30 @@
 				object-fit: cover;
 			}
 		}
-
-		.projectButton {
-			cursor: pointer;
-			margin-top: 1em;
-			width: 20rem;
-			font-size: 1em;
-			text-decoration: none;
-			color: white;
-			background: #1ee8b722;
-			box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-			width: fit-content;
-			padding: 0.5rem 1rem;
-			border-radius: 2rem;
-			transition: ease-out 0.3s;
-			&:hover {
-				background: $green;
-				color: black;
+		.links {
+			margin: 1em 0;
+			display: flex;
+			justify-content: space-around;
+			a {
+				text-decoration: none;
+				color: $circle-one;
+				padding: 0.3em 1em;
+				border-radius: 1em;
+				transition: all 0.3s;
+				&:hover {
+					color: white;
+				}
 			}
 		}
-	}
-
-	.projectDetailsContainer {
-		top: 0;
-		left: 0;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background: linear-gradient(to bottom right, #1ee8b766, #7a88d866);
-		backdrop-filter: blur(10px);
-		border-radius: 2rem;
-		text-decoration: none;
-		padding: 0.5rem;
-		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-		.projectDetails {
-			position: relative;
-			padding: 2em 3em;
-			color: white;
-			width: 100%;
-			height: 100%;
-			background: #0e1117dd;
-			border-radius: 2rem;
-			display: grid;
-			place-items: center;
-
-			img {
-				width: 60%;
-				margin: 0 auto;
+		.techStack {
+			display: flex;
+			flex-wrap: wrap;
+			.tech {
+				margin-right: 1em;
+				margin-bottom: 1em;
+				padding: 0.3em 1em;
+				background: $primary-transparent;
 				border-radius: 1em;
-			}
-			.closeButton {
-				cursor: pointer;
-				position: absolute;
-				top: 2em;
-				right: 2em;
-			}
-			.projectContent {
-				font-size: 24px;
-				width: 80%;
-				h1 {
-					font-size: 1.5em;
-					margin-bottom: 1em;
-					font-family: 'Montserrat';
-				}
-				p {
-					font-size: 1em;
-				}
 			}
 		}
 	}

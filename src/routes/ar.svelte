@@ -49,7 +49,7 @@
 
 		.xrButton {
 			cursor:pointer;
-			background: $green;
+			background: $primary;
 			padding: 1em;
 			font-size: 1.5em;
 			border-radius: 1em;

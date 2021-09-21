@@ -46,7 +46,7 @@
 		font-size: 24px;
         .highlight {
 			text-decoration: none;
-            color:$green;
+            color:$circle-one;
         }
 		p {
 			font-weight: 200;
@@ -60,7 +60,7 @@
 				margin-right: 1em;
 				color: white;
 				&:hover {
-					color: $green;
+					color: $primary;
 				}
 			}
 		}
@@ -81,7 +81,7 @@
 				border-radius: 2rem;
 				transition: ease-out 0.3s;
 				&:hover {
-					background: $green;
+					background: $primary;
 					color: black;
 				}
 			}
@@ -91,19 +91,6 @@
 	@media only screen and (max-width: 1366px) {
 		.home-container {
 			font-size: 18px;
-		}
-	}
-
-	// @media only screen and (max-width: 768px) {
-	// 	.home-container {
-	// 		font-size: 14px;
-	// 		max-width: 80%;
-	// 	}
-	// }
-
-	@media only screen and (max-width: 512px) {
-		.home-container {
-			font-size: 14px;
 		}
 	}
 </style>

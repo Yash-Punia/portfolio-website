@@ -17,7 +17,7 @@
 		'Photoshop'
 	];
 
-	let tab = 'education';
+	let tab = 'experience';
 	let educationTab;
 	let experienceTab;
 
@@ -51,22 +51,22 @@
 		</div>
 		<div class="tabButtons">
 			<div
-				bind:this={educationTab}
-				on:click={(e) => {
-					toggleTab('education');
-				}}
-				class="educationButton selected"
-			>
-				Education
-			</div>
-			<div
 				bind:this={experienceTab}
 				on:click={(e) => {
 					toggleTab('experience');
 				}}
-				class="experienceButton"
+				class="experienceButton selected"
 			>
 				Experience
+			</div>
+			<div
+				bind:this={educationTab}
+				on:click={(e) => {
+					toggleTab('education');
+				}}
+				class="educationButton"
+			>
+				Education
 			</div>
 		</div>
 		{#key tab}
@@ -79,10 +79,9 @@
 		<div class="buttons">
 			<a
 				target="_blank"
-				href="https://drive.google.com/file/d/1ForiKFcQ-2Dk3WuZjlXMNERoGYFo5eLG/view?usp=sharing"
+				href="https://drive.google.com/file/d/10GE-TfIN_P8zVAYYSU_yifb749fuo6cz/view?usp=sharing"
 				class="resumeButton">Download Resume</a
 			>
-			<a href="/contact">Contact Me</a>
 		</div>
 	</div>
 </div>
@@ -101,7 +100,7 @@
 			height: 30rem;
 			object-fit: cover;
 			border-radius: 2rem;
-			border: 0.2rem solid $green-transparent;
+			border: 0.2rem solid $primary-transparent;
 			margin: 4em auto;
 		}
 		.content {
@@ -124,7 +123,7 @@
 				.skill-item {
 					width: fit-content;
 					margin: 0.3em;
-					background: $green-transparent;
+					background: $primary-transparent;
 					border-radius: 1em;
 					font-size: 0.8em;
 					padding: 0.2em 0.5em;
@@ -139,7 +138,7 @@
 					cursor: pointer;
 					transition: all 0.3s;
 					&:hover {
-						color: $circle-purple;
+						color: $circle-two;
 					}
 				}
 			}
@@ -150,15 +149,14 @@
 					font-size: 0.8em;
 					text-decoration: none;
 					color: white;
-					background: #1ee8b722;
+					background: $primary-transparent;
 					box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
 					width: fit-content;
 					padding: 0.5rem 1rem;
 					border-radius: 2rem;
 					transition: ease-out 0.3s;
 					&:hover {
-						background: $green;
-						color: black;
+						background: $primary;
 					}
 				}
 			}
@@ -166,7 +164,7 @@
 	}
 
 	.selected {
-		color: $circle-purple;
+		color: $circle-one;
 	}
 
 	@media only screen and (max-width: 1366px) {

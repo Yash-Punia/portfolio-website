@@ -44,7 +44,7 @@
 				position: absolute;
 				top: 0.3em;
 				left: -1.2em;
-				background: $circle-blue;
+				background: $circle-two;
 				border-radius: 100%;
 			}
 			h1 {
@@ -63,7 +63,7 @@
 			h3 {
 				font-size: 1em;
 				font-weight: 400;
-				color: $circle-purple;
+				color: $circle-one;
 			}
 		}
 		&::before {
@@ -73,7 +73,7 @@
 			position: absolute;
 			width: 2px;
 			height: 100%;
-			background: $circle-blue;
+			background: $circle-two;
 		}
 	}
 

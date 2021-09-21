@@ -38,22 +38,23 @@
 		right: 0;
 		.tab {
 			cursor: pointer;
-			background: $green;
+			background: $primary;
 			color: black;
 			border-radius: 1em;
 			padding: 1em;
 			margin-left: 1em;
 			transition: all 0.3s;
+			border: 2px solid $primary;
 			&:hover {
 				background: #0f1c1f;
 				color: white;
-				border: 2px solid $green;
+				border: 2px solid $primary;
 			}
 		}
 		.selected {
 			background: #0f1c1f;
 			color: white;
-			border: 2px solid $green;
+			border: 2px solid $primary;
 		}
 	}
 	@media only screen and (max-width: 1366px) {

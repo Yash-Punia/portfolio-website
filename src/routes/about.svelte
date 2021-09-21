@@ -116,7 +116,7 @@
 			height: 30rem;
 			object-fit: cover;
 			border-radius: 2rem;
-			border: 0.2rem solid $green-transparent;
+			border: 0.2rem solid $primary-transparent;
 			margin: 4em auto;
 		}
 		.content {
@@ -139,7 +139,7 @@
 				.skill-item {
 					width: fit-content;
 					margin: 0.3em;
-					background: $green-transparent;
+					background: $primary-transparent;
 					border-radius: 1em;
 					font-size: 0.8em;
 					padding: 0.2em 0.5em;
@@ -154,7 +154,7 @@
 					cursor: pointer;
 					transition: all 0.3s;
 					&:hover {
-						color: $circle-purple;
+						color: $circle-three;
 					}
 				}
 			}
@@ -172,7 +172,7 @@
 					border-radius: 2rem;
 					transition: ease-out 0.3s;
 					&:hover {
-						background: $green;
+						background: $primary;
 						color: black;
 					}
 				}
@@ -181,6 +181,6 @@
 	}
 
 	.selected {
-		color: $circle-purple;
+		color: $circle-three;
 	}
 </style>

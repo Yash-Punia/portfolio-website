@@ -50,13 +50,13 @@
 				position: absolute;
 				top: 0.4em;
 				left: -1.2em;
-				background: $circle-blue;
+				background: $circle-two;
 				border-radius: 100%;
 			}
 			h3 {
 				font-size: 1em;
 				font-weight: 400;
-				color: $circle-purple;
+				color: $circle-one;
 			}
 			h1 {
 				font-weight: 600;
@@ -79,7 +79,7 @@
 			position: absolute;
 			width: 2px;
 			height: 100%;
-			background: $circle-blue;
+			background: $circle-two;
 		}
 	}
 	
