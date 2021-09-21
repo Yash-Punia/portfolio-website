@@ -1,5 +1,4 @@
 <script>
-	import {fade} from 'svelte/transition';
 	import ProjectCard from '$lib/components/projectCard.svelte';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
 	import {spinner} from 'svelte-awesome/icons';
