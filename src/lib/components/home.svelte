@@ -10,31 +10,39 @@
 	<p>Hello I'm</p>
 	<h1>Yash Punia</h1>
 	<p>I make <strong>AR apps</strong> and <strong>Video Games</strong></p>
-	<p><strong class="highlight">GSoC 2020</strong> at Catrobat | President (Team ISTE)</p>
-	<p>Check out my games at <a class="highlight" href="https://yashpunia.itch.io/"><strong>itch.io</strong></a> </p>
+	<p><span class="highlight">GSoC 2020</span> at Catrobat | President (Team ISTE)</p>
+	<p>
+		Check out my games at <a class="highlight" href="https://yashpunia.itch.io/">itch.io</a>
+	</p>
+	<p>
+		I have my own Game Dev studio - <a class="highlight" href="https://candela-apps.web.app/"
+			>Candela Apps</a
+		>
+	</p>
 	<div class="buttons">
 		<div
 			on:click={() => {
-				state.set("more")
+				state.set('more');
 			}}
 		>
 			More About Me
 		</div>
-        <a href="/game" target="_blank">
-            Play a Game?
-        </a>
+		<a href="/game" target="_blank"> Play a Game? </a>
 	</div>
 	<div class="links">
-		<a href="https://twitter.com/zeldariomon" target="__blank"
-			> <Icon data={twitter} scale=2 />
+		<a href="https://twitter.com/zeldariomon" target="__blank">
+			<Icon data={twitter} scale="2" />
 		</a>
 		<a href="https://www.linkedin.com/in/yash-punia/" target="__blank">
-			<Icon data={linkedin} scale=2 />
+			<Icon data={linkedin} scale="2" />
 		</a>
 		<a href="https://github.com/Yash-Punia/" target="__blank">
-			<Icon data={github} scale=2 />
+			<Icon data={github} scale="2" />
 		</a>
 	</div>
+	<a href="https://candela-apps.web.app/" class="candela" target="__blank">
+		<img src="logo512.png" alt="candelaLogo" />
+	</a>
 </div>
 
 <style lang="scss">
@@ -44,10 +52,11 @@
 		align-items: flex-start;
 		flex-direction: column;
 		font-size: 24px;
-        .highlight {
+		.highlight {
+			font-weight: 700;
 			text-decoration: none;
-            color:$circle-one;
-        }
+			color: $circle-one;
+		}
 		p {
 			font-weight: 200;
 		}
@@ -68,8 +77,9 @@
 		.buttons {
 			display: grid;
 			grid-template-columns: 1fr;
-			a, div {
-                cursor: pointer;
+			a,
+			div {
+				cursor: pointer;
 				width: 20rem;
 				font-size: 0.8em;
 				text-decoration: none;
@@ -83,6 +93,19 @@
 				&:hover {
 					background: $primary;
 					color: black;
+				}
+			}
+		}
+
+		.candela {
+			position: absolute;
+			right: 1em;
+			bottom: 0;
+			img {
+				height: 4em;
+				&:hover {
+					background: rgba($color: #ffc002, $alpha: 0.2);
+					border-radius: 100%;
 				}
 			}
 		}
