@@ -4,22 +4,19 @@
 	const profileUrl = 'Profile3.jpg';
 	import { fade } from 'svelte/transition';
 
-	const skillList = [
+	const frameworks = [
 		'C#',
 		'Unity3D',
+		'C++',
 		'WebXR',
 		'ARFoundation',
 		'AR Core',
-		'Web Dev',
-		'C++',
 		'Python',
 		'Blender',
-		'Photoshop'
+		'Photoshop',
+		'Unreal Engine',
+		'Svelte'
 	];
-
-	let tab = 'experience';
-	let educationTab;
-	let experienceTab;
 
 	const toggleTab = (tabName) => {
 		console.log(tab);
@@ -34,156 +31,25 @@
 	};
 </script>
 
-<div in:fade class="more-container">
-	<img src={profileUrl} alt="profile=pic" />
-	<div class="content">
-		<h1>About Me</h1>
-		<p>
-			A Game Dev enthusiast specializing in Augmented Reality and Virtual Reality for the next gen
-			games and apps. Also fluent in various web technologies and I fiddle with WebXR to showcase XR
-			to everyone! I also play Ukulele and Piano sometimes :D
-		</p>
-		<h3>Skills</h3>
-		<div class="skills">
-			{#each skillList as skill}
-				<div class="skill-item">{skill}</div>
+<div in:fade class="center">
+	<Experience />
+	
+	<div class="my-8">
+		<h3 class="text-2xl mb-4">Frameworks</h3>
+		<div class="flex flex-wrap">
+			{#each frameworks as framework}
+			<div class=" bg-primary-transparent rounded-2xl px-2 mr-4 mb-4 text-lg">{framework}</div>
 			{/each}
 		</div>
-		<div class="tabButtons">
-			<div
-				bind:this={experienceTab}
-				on:click={(e) => {
-					toggleTab('experience');
-				}}
-				class="experienceButton selected"
-			>
-				Experience
-			</div>
-			<div
-				bind:this={educationTab}
-				on:click={(e) => {
-					toggleTab('education');
-				}}
-				class="educationButton"
-			>
-				Education
-			</div>
-		</div>
-		{#key tab}
-			{#if tab == 'education'}
-				<Education />
-			{:else}
-				<Experience />
-			{/if}
-		{/key}
-		<div class="buttons">
-			<a
-				target="_blank"
-				href="https://drive.google.com/file/d/10GE-TfIN_P8zVAYYSU_yifb749fuo6cz/view?usp=sharing"
-				class="resumeButton">Download Resume</a
-			>
-		</div>
+	</div>
+	
+	<Education />
+	<div class="w-max shadow-sm transition-all hover:shadow-md hover:-translate-y-1">
+		<a
+			target="_blank"
+			href="https://drive.google.com/file/d/10GE-TfIN_P8zVAYYSU_yifb749fuo6cz/view?usp=sharing"
+			class="glass-element text-xl w-max p-2 rounded-xl transition-all hover:bg-primary-transparent"
+			>Download Resume</a
+		>
 	</div>
 </div>
-
-<style lang="scss">
-	@import '../global.scss';
-	.more-container {
-		width: 60vw;
-		border-radius: 2rem;
-		display: grid;
-		gap: 1em;
-		grid-template-columns: 1fr 2fr;
-		font-size: 24px;
-		img {
-			width: 20rem;
-			height: 30rem;
-			object-fit: cover;
-			border-radius: 2rem;
-			border: 0.2rem solid $primary-transparent;
-			margin: 4em auto;
-		}
-		.content {
-			height: fit-content;
-			h1 {
-				font-family: 'Montserrat';
-			}
-			p {
-				font-weight: 300;
-				margin-top: 3rem;
-				text-align: justify;
-				font-size: 0.9em;
-			}
-			h3 {
-				margin: 2em 0 1em 0;
-			}
-			.skills {
-				display: flex;
-				flex-wrap: wrap;
-				.skill-item {
-					width: fit-content;
-					margin: 0.3em;
-					background: $primary-transparent;
-					border-radius: 1em;
-					font-size: 0.8em;
-					padding: 0.2em 0.5em;
-				}
-			}
-			.tabButtons {
-				display: flex;
-				.educationButton,
-				.experienceButton {
-					position: relative;
-					margin: 1em 1em;
-					cursor: pointer;
-					transition: all 0.3s;
-					&:hover {
-						color: $circle-two;
-					}
-				}
-			}
-			.buttons {
-				margin-top: 2em;
-				a {
-					width: 20rem;
-					font-size: 0.8em;
-					text-decoration: none;
-					color: white;
-					background: $primary-transparent;
-					box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-					width: fit-content;
-					padding: 0.5rem 1rem;
-					border-radius: 2rem;
-					transition: ease-out 0.3s;
-					&:hover {
-						background: $primary;
-					}
-				}
-			}
-		}
-	}
-
-	.selected {
-		color: $circle-one;
-	}
-
-	@media only screen and (max-width: 1366px) {
-		.more-container {
-			font-size: 18px;
-			img {
-				width: 15rem;
-				height: 20rem;
-				object-fit: cover;
-			}
-		}
-	}
-
-	@media only screen and (max-width: 512px) {
-		.more-container {
-			width: 70vw;
-			font-size: 14px;
-			display: flex;
-			flex-direction: column;
-		}
-	}
-</style>

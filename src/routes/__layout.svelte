@@ -10,6 +10,10 @@
 	@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 	@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
 
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
 	:global(*) {
 		margin: 0;
 		padding: 0;
@@ -17,29 +21,15 @@
 	}
 
 	:global(body) {
-		font-family: 'Work Sans', 'Roboto', 'Source Sans Pro';
-		background: $dark;
-		background-position: top right;
-		background-repeat: no-repeat;
-		min-height: 100vh;
-	}
-
-	:global(.grid) {
-		min-height: 100vh;
-		padding: 10vh 0;
-		display: grid;
-		place-items: center;
+		@apply bg-dark
 	}
 
 	:global(.glass-element) {
-		max-width: 80%;
-		background: linear-gradient(to bottom right, $glass-gradient-to, $glass-gradient-from);
-		backdrop-filter: blur(10px);
-		border-radius: 2rem;
-		text-decoration: none;
-		padding: 0.5rem;
-		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-		transition: all 0.3s;
+		@apply bg-gradient-to-br from-glass-gradient-from to-glass-gradient-to shadow-xl backdrop-blur-lg;
+	}
+
+	:global(.center) {
+		@apply w-1/3 mx-auto;
 	}
 
 	:global(::-webkit-scrollbar) {
@@ -64,7 +54,8 @@
 
 	.circle-1 {
 		z-index: -1;
-		position: fixed;
+		position: absolute;
+		// position: fixed;
 		bottom: 50vh;
 		right: 1vw;
 		width: 300px;
@@ -74,7 +65,8 @@
 
 	.circle-2 {
 		z-index: -1;
-		position: fixed;
+		position: absolute;
+		// position: fixed;
 		top: 20vh;
 		left: 20vw;
 		width: 100px;
@@ -84,7 +76,8 @@
 
 	.circle-3 {
 		z-index: -1;
-		position: fixed;
+		position: absolute;
+		// position: fixed;
 		bottom: 8vh;
 		right: 30vw;
 		width: 50px;
@@ -94,7 +87,8 @@
 
 	.circle-4 {
 		z-index: -1;
-		position: fixed;
+		position: absolute;
+		// position: fixed;
 		bottom: 20vh;
 		left: 5vw;
 		width: 75px;

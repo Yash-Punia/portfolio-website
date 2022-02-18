@@ -1,70 +1,38 @@
 <script>
-    import { state } from '$lib/stores/stateStores';
+	import { state } from '$lib/stores/stateStores';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import arrowLeft from 'svelte-awesome/icons/arrow-left';
+	import {  folder, pencil, user } from 'svelte-awesome/icons';
 
-    let tabs = [];
-	const handleClick = (tabName, tabDiv) => {
-        if(tabName == $state)
-            return;
-        state.set(tabName);
-        tabs.forEach(tab => {
-            tab.classList.remove("selected");
-        })
-        tabDiv.classList.add("selected");
-    };
+	let buttons = [
+		{
+			name: 'About',
+			iconData: user,
+			buttonState: 'about'
+		},
+		{
+			name: 'Work',
+			iconData: folder,
+			buttonState: 'work'
+		},
+		{
+			name: 'Posts',
+			iconData: pencil,
+			buttonState: 'posts'
+		}
+	];
 </script>
 
-<div on:click={e=>{handleClick("home",e.target)}} bind:this={tabs[0]} class="homeTab">
-	<Icon data={arrowLeft} scale=2/>
-</div>
-<div class="navbar">
-	<div on:click={e=>{handleClick("more",e.target)}} bind:this={tabs[1]} class="tab selected">About</div>
-	<div on:click={e=>{handleClick("projects",e.target)}} bind:this={tabs[2]} class="tab">Projects</div>
-</div>
-
-<style lang="scss">
-	@import '../global.scss';
-	.homeTab {
-			width: fit-content;
-			transition: all 0.3s;
-			cursor: pointer;
-		}
-	.navbar {
-		display: flex;
-		font-size: 20px;
-		position: absolute;
-		top: -2em;
-		right: 0;
-		.tab {
-			cursor: pointer;
-			background: $primary;
-			color: black;
-			border-radius: 1em;
-			padding: 1em;
-			margin-left: 1em;
-			transition: all 0.3s;
-			border: 2px solid $primary;
-			&:hover {
-				background: #0f1c1f;
-				color: white;
-				border: 2px solid $primary;
-			}
-		}
-		.selected {
-			background: #0f1c1f;
-			color: white;
-			border: 2px solid $primary;
-		}
-	}
-	@media only screen and (max-width: 1366px) {
-		.navbar {
-			top: -1.5em;
-
-			font-size: 18px;
-			.tab {
-				padding: 0.8em 1em;
-			}
-		}
-	}
-</style>
+<nav class="glass-element center my-16 p-1 rounded-xl">
+	<div
+		class="bg-glass-container py-4 rounded-xl grid text-xl text-white grid-flow-col place-items-center"
+	>
+		{#each buttons as button}
+			<div on:click={() => {
+				state.set(button.buttonState)
+			}} class="grid grid-flow-col place-items-center cursor-pointer transition-all hover:text-primary">
+				<Icon data={button.iconData} scale="1.5" />
+				<p class="ml-2">{button.name}</p>
+			</div>
+		{/each}
+	</div>
+</nav>

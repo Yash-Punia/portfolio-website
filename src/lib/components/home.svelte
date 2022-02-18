@@ -4,116 +4,58 @@
 	import twitter from 'svelte-awesome/icons/twitter';
 	import linkedin from 'svelte-awesome/icons/linkedin';
 	import github from 'svelte-awesome/icons/github';
+
+	let links = [
+		{
+			data: twitter,
+			link: 'https://twitter.com/zeldariomon'
+		},
+		{
+			data: linkedin,
+			link: 'https://www.linkedin.com/in/yash-punia/'
+		},
+		{
+			data: github,
+			link: 'https://github.com/Yash-Punia/'
+		}
+	];
+
+	const profileUrl = 'yash1.jpg';
 </script>
 
-<div class="home-container">
-	<p>Hello I'm</p>
-	<h1>Yash Punia</h1>
-	<p>I make <strong>AR apps</strong> and <strong>Video Games</strong></p>
-	<p><span class="highlight">GSoC 2020</span> at Catrobat | President (Team ISTE)</p>
-	<p>
-		Check out my games at <a class="highlight" href="https://yashpunia.itch.io/">itch.io</a>
-	</p>
-	<p>
-		I have my own Game Dev studio - <a class="highlight" href="https://candela-apps.web.app/"
-			>Candela Apps</a
-		>
-	</p>
-	<div class="buttons">
-		<div
-			on:click={() => {
-				state.set('more');
-			}}
-		>
-			More About Me
+<div class="center mt-48 text-white">
+	<div class="flex justify-center">
+		<img class="glass-element p-1.5 h-28 object-fill rounded-full" src={profileUrl} alt="me" />
+		<div class="ml-8">
+			<h1 class="font-bold text-4xl">Yash Punia</h1>
+			<p class=" mt-2 text-2xl">Gamedev | XR Development</p>
+			<p class=" mt-2 text-xl">
+				Founder of <a
+					target="__blank"
+					class="font-bold text-primary transition-all hover:tracking-wide"
+					href="https://candela-apps.web.app/">Candela Apps 💡</a
+				>
+			</p>
 		</div>
-		<a href="/game" target="_blank"> Play a Game? </a>
 	</div>
-	<div class="links">
-		<a href="https://twitter.com/zeldariomon" target="__blank">
-			<Icon data={twitter} scale="2" />
-		</a>
-		<a href="https://www.linkedin.com/in/yash-punia/" target="__blank">
-			<Icon data={linkedin} scale="2" />
-		</a>
-		<a href="https://github.com/Yash-Punia/" target="__blank">
-			<Icon data={github} scale="2" />
-		</a>
+	<div class="flex w-full justify-center gap-4 mt-12">
+		{#each links as item}
+			<a
+				class="bg-glass-button rounded-full p-1 transition-all hover:scale-110 hover:bg-primary-transparent"
+				href={item.link}
+				target="__blank"
+			>
+				<div class="w-8 h-8 grid place-items-center">
+					<Icon data={item.data} scale="1.5" />
+				</div>
+			</a>
+		{/each}
 	</div>
-	<a href="https://candela-apps.web.app/" class="candela" target="__blank">
-		<img src="logo512.png" alt="candelaLogo" />
-	</a>
+	<div class="mt-12 text-justify rounded-xl lg:text-xl">
+		<p>
+			I'm a creative person with a passion of designing games and learning new methods to develop
+			them. With the rise of Metaverse, I'm also exploring the domain of XR and learning as much as
+			I can.
+		</p>
+	</div>
 </div>
-
-<style lang="scss">
-	@import '../global.scss';
-	.home-container {
-		display: flex;
-		align-items: flex-start;
-		flex-direction: column;
-		font-size: 24px;
-		.highlight {
-			font-weight: 700;
-			text-decoration: none;
-			color: $circle-one;
-		}
-		p {
-			font-weight: 200;
-		}
-		* {
-			margin: 0.5em 0;
-		}
-		.links {
-			margin: 2em 0;
-			a {
-				margin-right: 1em;
-				color: white;
-				&:hover {
-					color: $primary;
-				}
-			}
-		}
-
-		.buttons {
-			display: grid;
-			grid-template-columns: 1fr;
-			a,
-			div {
-				cursor: pointer;
-				width: 20rem;
-				font-size: 0.8em;
-				text-decoration: none;
-				color: white;
-				background: #1ee8b722;
-				box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
-				width: fit-content;
-				padding: 0.5rem 1rem;
-				border-radius: 2rem;
-				transition: ease-out 0.3s;
-				&:hover {
-					background: $primary;
-					color: black;
-				}
-			}
-		}
-
-		.candela {
-			position: absolute;
-			right: 1em;
-			bottom: 0;
-			img {
-				height: 4em;
-				&:hover {
-					background: rgba($color: #ffc002, $alpha: 0.2);
-					border-radius: 100%;
-				}
-			}
-		}
-	}
-
-	@media only screen and (max-width: 1366px) {
-		.home-container {
-			font-size: 18px;
-		}
-	}
-</style>
