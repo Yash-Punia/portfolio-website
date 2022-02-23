@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 
 export const projects = writable([]);
-export const blogs = writable([]);
+export const posts = writable([]);
 
 const fetchData = async () => {
     //get latest master ref
@@ -11,7 +11,7 @@ const fetchData = async () => {
     const masterRef = refResponseJson.refs[0].ref;
 
 
-    //get the blogs
+    //get the posts
     const docUrl = 'https://yashpunia.cdn.prismic.io/api/v2/documents/search?ref=' + masterRef;
     const docResponse = await fetch(docUrl);
     const docResponseJson = await docResponse.json();
@@ -27,7 +27,7 @@ const fetchData = async () => {
     })
 
     projects.set(projectsFetched);
-    blogs.set(blogPostsFetched);
+    posts.set(blogPostsFetched);
 }
 
 fetchData();

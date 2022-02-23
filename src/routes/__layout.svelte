@@ -1,8 +1,15 @@
+<script>
+	let y;
+</script>
+
 <slot />
-<div class="circle circle-1" />
-<div class="circle circle-2" />
-<div class="circle circle-3" />
-<div class="circle circle-4" />
+<div class="hidden lg:block circle circle-1" style="filter: blur({Math.min(50,y*0.1)}px); opacity: {Math.max(0.2, 0.6-y*0.001)}"/>
+<div class="circle circle-2" style="filter: blur({Math.min(50,y*0.1)}px); opacity: {Math.max(0.2, 0.6-y*0.001)}"/>
+<div class="circle circle-3" style="filter: blur({Math.min(50,y*0.1)}px); opacity: {Math.max(0.2, 0.6-y*0.001)}"/>
+<div class="circle circle-4" style="filter: blur({Math.min(50,y*0.1)}px); opacity: {Math.max(0.2, 0.6-y*0.001)}"/>
+
+<svelte:window bind:scrollY={y} />
+
 
 <style lang="scss">
 	@import '../lib/global.scss';
@@ -28,10 +35,6 @@
 		@apply bg-gradient-to-br from-glass-gradient-from to-glass-gradient-to shadow-xl backdrop-blur-lg;
 	}
 
-	:global(.center) {
-		@apply w-1/3 mx-auto;
-	}
-
 	:global(::-webkit-scrollbar) {
 		width: 5px;
 	}
@@ -45,6 +48,7 @@
 	}
 
 	.circle {
+		position: fixed;
 		background: radial-gradient(at 0% 30%, $circle-one 20%, $circle-two, $circle-three);
 		border-radius: 100%;
 		animation-name: circle;
@@ -54,7 +58,6 @@
 
 	.circle-1 {
 		z-index: -1;
-		position: absolute;
 		// position: fixed;
 		bottom: 50vh;
 		right: 1vw;
@@ -65,7 +68,6 @@
 
 	.circle-2 {
 		z-index: -1;
-		position: absolute;
 		// position: fixed;
 		top: 20vh;
 		left: 20vw;
@@ -76,7 +78,6 @@
 
 	.circle-3 {
 		z-index: -1;
-		position: absolute;
 		// position: fixed;
 		bottom: 8vh;
 		right: 30vw;
@@ -87,7 +88,6 @@
 
 	.circle-4 {
 		z-index: -1;
-		position: absolute;
 		// position: fixed;
 		bottom: 20vh;
 		left: 5vw;

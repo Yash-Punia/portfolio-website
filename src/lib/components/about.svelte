@@ -31,14 +31,14 @@
 	};
 </script>
 
-<div in:fade class="center">
+<div in:fade class="mx-auto w-3/4 md:w-2/5 xl:w-1/3">
 	<Experience />
 	
 	<div class="my-8">
-		<h3 class="text-2xl mb-4">Frameworks</h3>
+		<h3 class="text-xl xl:text-2xl font-semibold mb-4">Frameworks</h3>
 		<div class="flex flex-wrap">
 			{#each frameworks as framework}
-			<div class=" bg-primary-transparent rounded-2xl px-2 mr-4 mb-4 text-lg">{framework}</div>
+			<div class=" bg-primary-transparent rounded-2xl px-2 md:mr-2 md:mb-2 xl:mr-4 xl:mb-4 md:text-xs xl:text-lg">{framework}</div>
 			{/each}
 		</div>
 	</div>
@@ -48,7 +48,7 @@
 		<a
 			target="_blank"
 			href="https://drive.google.com/file/d/10GE-TfIN_P8zVAYYSU_yifb749fuo6cz/view?usp=sharing"
-			class="glass-element text-xl w-max p-2 rounded-xl transition-all hover:bg-primary-transparent"
+			class="glass-element md:text-xs xl:text-xl w-max p-2 rounded-xl transition-all hover:bg-primary-transparent"
 			>Download Resume</a
 		>
 	</div>

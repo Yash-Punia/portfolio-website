@@ -1,11 +1,15 @@
 <script>
 	import { state } from '$lib/stores/stateStores';
-	import Blogs from '$lib/components/blogs.svelte';
+	import Blogs from '$lib/components/posts.svelte';
 	import About from '$lib/components/about.svelte';
 	import Home from '$lib/components/home.svelte';
 	import Navbar from '$lib/components/navbar.svelte';
 	import Work from '$lib/components/work.svelte';
+
+	let y, windowHeight;
 </script>
+
+<svelte:window bind:scrollY={y} bind:innerHeight={windowHeight}/>
 
 <svelte:head>
 	<title>Yash Punia</title>
@@ -13,9 +17,9 @@
 
 <Home />
 
-<Navbar />
+<Navbar scrollY = {y} windowHeight = {windowHeight} gotoEnabled={false}/>
 
-<div class="text-white mb-48">
+<div class="text-white mb-8 lg:mb-48">
 	{#if $state == 'about'}
 		<About />
 	{:else if $state == 'work'}

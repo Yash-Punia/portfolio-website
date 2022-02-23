@@ -16,10 +16,10 @@
 	];
 </script>
 
-<h1 class="text-2xl font-semibold">Education</h1>
+<h1 class="text-xl xl:text-2xl font-semibold">Education</h1>
 <div class="timeline my-8">
 	{#each education as item}
-		<div class="timeline-item text-xl my-8">
+		<div class="timeline-item md:text-sm xl:text-xl  my-8">
 			<h3 class="text-circle-two" >{item.time}</h3>
 			<h1 class="">{item.instituteName} - <span>({item.degree})</span></h1>
 			<h2 class="font-semibold text-primary">{item.result}</h2>

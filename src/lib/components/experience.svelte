@@ -28,14 +28,14 @@
 	];
 </script>
 
-<h1 class="text-2xl font-semibold">Experience</h1>
+<h1 class="text-xl xl:text-2xl font-semibold">Experience</h1>
 <div class="timeline my-8 mb-16">
 	{#each experience as item}
-		<div class="timeline-item text-xl my-8">
+		<div class="timeline-item md:text-sm xl:text-xl my-8">
 			<p class="text-circle-two" >{item.time}</p>
-			<p class="text-2xl">{item.company}</p>
+			<p class="text-xl xl:text-2xl">{item.company}</p>
 			<p class="text-primary">{item.position}</p>
-			<p clas= "">{item.description}</p>
+			<p>{item.description}</p>
 		</div>
 	{/each}
 </div>
