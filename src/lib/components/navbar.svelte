@@ -2,10 +2,11 @@
 	export let scrollY, windowHeight, gotoEnabled;
 
 	import { state } from '$lib/stores/stateStores';
-	import { folder, pencil, user } from 'svelte-awesome/icons';
-	import { projects } from '$lib/stores/store';
-	import spinner from 'svelte-awesome/icons/spinner';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
+	import folder from 'svelte-awesome/icons/folder';
+	import pencil from 'svelte-awesome/icons/pencil';
+	import user from 'svelte-awesome/icons/user';
+	import { projects } from '$lib/stores/store';
 	import { fade, fly } from 'svelte/transition';
 	import { goto } from '$app/navigation';
 

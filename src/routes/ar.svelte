@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import { refresh } from 'svelte-awesome/icons';
+	import refresh from 'svelte-awesome/icons/refresh';
 	import App from '$lib/threejs/arPortfolio.js';
 
 	let xrSupported = null;

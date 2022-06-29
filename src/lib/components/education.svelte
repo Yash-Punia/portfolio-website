@@ -1,19 +1,6 @@
 <script>
 	import { fly } from 'svelte/transition';
-	let education = [
-		{
-			instituteName: 'NIT Hamirpur',
-			degree: 'BTech',
-			time: '2018-Present',
-			result: 'CGPA 9.46'
-		},
-		{
-			instituteName: 'DAV Public School (Sec 14, GGN)',
-			degree: 'Class 12',
-			time: '2018',
-			result: '95.6%'
-		}
-	];
+	import { education } from '$lib/constants';
 </script>
 
 <h1 class="text-xl xl:text-2xl font-semibold">Education</h1>

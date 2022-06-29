@@ -3,20 +3,7 @@
 	import Experience from '$lib/components/experience.svelte';
 	const profileUrl = 'Profile3.jpg';
 	import { fade } from 'svelte/transition';
-
-	const frameworks = [
-		'C#',
-		'Unity3D',
-		'C++',
-		'WebXR',
-		'ARFoundation',
-		'AR Core',
-		'Python',
-		'Blender',
-		'Photoshop',
-		'Unreal Engine',
-		'Svelte'
-	];
+	import { frameworks, resumeLink } from '$lib/constants';
 
 	const toggleTab = (tabName) => {
 		console.log(tab);
@@ -47,7 +34,7 @@
 	<div class="w-max shadow-sm transition-all hover:shadow-md hover:-translate-y-1">
 		<a
 			target="_blank"
-			href="https://drive.google.com/file/d/10GE-TfIN_P8zVAYYSU_yifb749fuo6cz/view?usp=sharing"
+			href={resumeLink}
 			class="glass-element md:text-xs xl:text-xl w-max p-2 rounded-xl transition-all hover:bg-primary-transparent"
 			>Download Resume</a
 		>

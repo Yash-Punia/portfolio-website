@@ -1,31 +1,6 @@
 <script>
-    import {  fly } from 'svelte/transition'
-	let experience = [
-		{
-            company: 'Lucid Labs',
-			position: 'Game Developer Intern',
-			time: 'Feb 2022 - Present',
-			description: 'To complete and finish a complete game using Unity3D and C#'
-        },
-        {
-            company: 'Catrobat',
-			position: 'GSoC 2021 Mentor',
-			time: 'Jun 2021 - Sep 2021',
-			description: 'To guide a student for the project Awesome Demo Game Project by Catrobat'
-        },
-		{
-			company: 'Ajna Lens',
-			position: 'Intern',
-			time: 'Jan 2021 - Mar 2021',
-			description: 'Creating XR experiences for AjnaLens headset. Unity3D Development. AR/VR Development.'
-		},
-        {
-            company: 'Catrobat',
-			position: 'GSoC 2020 Student',
-			time: 'Jun 2020 - September 2020',
-			description: 'Creating a 2D showcase game for Pocket Code app by Catrobat. Game developed Batroid.'
-        }
-	];
+	import {experience} from '$lib/constants'
+	
 </script>
 
 <h1 class="text-xl xl:text-2xl font-semibold">Experience</h1>

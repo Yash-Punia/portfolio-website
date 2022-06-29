@@ -5,6 +5,7 @@
 	import linkedin from 'svelte-awesome/icons/linkedin';
 	import github from 'svelte-awesome/icons/github';
 	import gamepad from 'svelte-awesome/icons/gamepad'
+	import { resumeLink } from '$lib/constants';
 
 	let links = [
 		{
@@ -60,7 +61,11 @@
 		<p in:fly>
 			I'm a creative person with a passion of designing games and learning new methods to develop
 			them. With the rise of Metaverse, I'm also exploring the domain of XR and learning as much as
-			I can.
+			I can. 
+		</p>
+		<p class="mt-2">
+			<a class="font-bold text-primary cursor-pointer transition-all hover:tracking-wide" 
+				href={resumeLink} target="__blank"> Download my resume </a> to know more about me!
 		</p>
 	</div>
 </div>

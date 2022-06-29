@@ -2,7 +2,7 @@
 	import {fade, fly} from 'svelte/transition'
 	import Post from '$lib/components/post.svelte';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import {spinner} from 'svelte-awesome/icons';
+	import spinner from 'svelte-awesome/icons/spinner';
 	import { posts } from '$lib/stores/store';
 </script>
 
