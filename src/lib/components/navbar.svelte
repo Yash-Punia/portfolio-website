@@ -22,12 +22,12 @@
 			name: 'Work',
 			iconData: folder,
 			buttonState: 'work'
-		},
-		{
-			name: 'Posts',
-			iconData: pencil,
-			buttonState: 'posts'
 		}
+		// {
+		// 	name: 'Posts',
+		// 	iconData: pencil,
+		// 	buttonState: 'posts'
+		// }
 	];
 </script>
 
