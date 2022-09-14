@@ -5,6 +5,7 @@
 	import Icon from 'svelte-awesome/components/Icon.svelte';
 	import folder from 'svelte-awesome/icons/folder';
 	import pencil from 'svelte-awesome/icons/pencil';
+	import gamepad from 'svelte-awesome/icons/gamepad'
 	import user from 'svelte-awesome/icons/user';
 	import { projects } from '$lib/stores/store';
 	import { fade, fly } from 'svelte/transition';
@@ -22,6 +23,11 @@
 			name: 'Work',
 			iconData: folder,
 			buttonState: 'work'
+		},
+		{
+			name: 'Games',
+			iconData: gamepad,
+			buttonState: 'games'
 		}
 		// {
 		// 	name: 'Posts',

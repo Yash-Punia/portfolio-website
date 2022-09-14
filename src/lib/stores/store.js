@@ -2,6 +2,7 @@ import { writable } from 'svelte/store';
 
 export const projects = writable([]);
 export const posts = writable([]);
+export const games = writable([]);
 
 const fetchData = async () => {
     //get latest master ref
@@ -18,16 +19,20 @@ const fetchData = async () => {
 
     let projectsFetched = [];
     let blogPostsFetched = [];
+    let gamesFetched = [];
 
     docResponseJson.results.map((element, index) => {
         if (element.type === 'projects')
             projectsFetched.push(element)
         else if (element.type === 'blog_posts')
             blogPostsFetched.push(element);
+        else if (element.type === 'games')
+            gamesFetched.push(element)
     })
 
     projects.set(projectsFetched);
     posts.set(blogPostsFetched);
+    games.set(gamesFetched);
 }
 
 fetchData();

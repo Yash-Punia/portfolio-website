@@ -5,6 +5,7 @@
 	import Home from '$lib/components/home.svelte';
 	import Navbar from '$lib/components/navbar.svelte';
 	import Work from '$lib/components/work.svelte';
+	import Games from '$lib/components/games.svelte';
 
 	let y, windowHeight;
 </script>
@@ -26,5 +27,7 @@
 		<Work />
 	{:else if $state == 'posts'}
 		<Blogs />
+	{:else if $state == 'games'}
+		<Games />
 	{/if}
 </div>
