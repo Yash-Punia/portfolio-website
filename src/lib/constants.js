@@ -1,4 +1,4 @@
-export const resumeLink = "https://drive.google.com/file/d/1vpvLk2-LWMepA1SH64kJIQTzfTBYQtm9/view?usp=sharing";
+export const resumeLink = "https://drive.google.com/file/d/1uIbLNfxt7NB4PhTih9hSKn6jKIHbvfey/view?usp=sharing";
 
 export const frameworks = [
     'C#',
