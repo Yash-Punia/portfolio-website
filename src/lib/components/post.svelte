@@ -40,10 +40,5 @@
 			<p class="text-circle-two mb-4">{month[parsedDate.getMonth()]}, {parsedDate.getFullYear()}</p>
 			<h2 class="text-xs">{smallDesc}... <span class="text-primary-transparent">read more</span> </h2>
 		</div>
-		<!-- <img
-			class="rounded-xl rounded-l-none h-full object-cover object-left md:max-h-24 xl:max-h-48 justify-self-center"
-			src={info.data.image.url}
-			alt={info.data.title[0].text}
-		/> -->
 	</div>
 </a>

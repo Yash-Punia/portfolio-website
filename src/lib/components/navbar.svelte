@@ -20,7 +20,7 @@
 			buttonState: 'about'
 		},
 		{
-			name: 'Work',
+			name: 'Projects',
 			iconData: folder,
 			buttonState: 'work'
 		},
@@ -28,12 +28,12 @@
 			name: 'Games',
 			iconData: gamepad,
 			buttonState: 'games'
+		},
+		{
+			name: 'Posts',
+			iconData: pencil,
+			buttonState: 'posts'
 		}
-		// {
-		// 	name: 'Posts',
-		// 	iconData: pencil,
-		// 	buttonState: 'posts'
-		// }
 	];
 </script>
 
