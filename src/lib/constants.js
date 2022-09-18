@@ -1,16 +1,14 @@
-export const resumeLink = "https://drive.google.com/file/d/1uIbLNfxt7NB4PhTih9hSKn6jKIHbvfey/view?usp=sharing";
+export const resumeLink = "https://drive.google.com/file/d/1nG4DU55PGRiOMTHyP1CRFAH-kPnxLt0D/view?usp=sharing";
 
 export const frameworks = [
     'C#',
     'Unity3D',
     'C++',
+    'Unreal Engine',
     'WebXR',
     'ARFoundation',
-    'AR Core',
-    'Python',
     'Blender',
     'Photoshop',
-    'Unreal Engine',
     'Svelte'
 ];
 
@@ -18,7 +16,7 @@ export const experience = [
     {
         company: 'Goldman Sachs',
         position: 'Summer Analyst',
-        time: 'June 2022 - Present',
+        time: 'June 2022 - Jul 2022',
         description: 'Write high quality code, tests and run successful pipelines for intern project'
     },
     {
