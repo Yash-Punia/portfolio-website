@@ -4,15 +4,19 @@ export const frameworks = [
     'C#',
     'Unity3D',
     'C++',
-    'Unreal Engine',
     'WebXR',
     'ARFoundation',
-    'Blender',
     'Photoshop',
     'Svelte'
 ];
 
 export const experience = [
+    {
+        company: 'LILA Games',
+        positin: 'Unity Game Developer',
+        time: 'June 2023 - Present',
+        description: 'Working on a mobile shooter game with core gameplay features'
+    },
     {
         company: 'Goldman Sachs',
         position: 'Summer Analyst',

@@ -1,8 +1,8 @@
 <script>
 	import { onMount } from 'svelte';
 	import Icon from 'svelte-awesome/components/Icon.svelte';
-	import arrowCircleUp from 'svelte-awesome/icons/arrow-circle-up';
-	import  arrowCircleDown from 'svelte-awesome/icons/arrow-circle-down';
+	import arrowCircleUp from 'svelte-awesome/icons/arrowCircleUp';
+	import  arrowCircleDown from 'svelte-awesome/icons/arrowCircleDown';
 	import App from '$lib/threejs/App.js';
 
 	onMount(() => {

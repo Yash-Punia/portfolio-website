@@ -26,7 +26,7 @@
 		}
 	];
 
-	const profileUrl = 'yash1.jpg';
+	const profileUrl = 'Profile5.jpg';
 </script>
 
 <div class="text-white mx-auto w-3/4 mt-12 md:mt-24 md:w-2/5 xl:mt-48 xl:w-1/3">
@@ -40,7 +40,7 @@
 			<h1 class="font-bold text-2xl md:text-3xl xl:text-4xl">Yash Punia</h1>
 			<p class="xl:mt-2 xl:text-2xl">Gamedev | XR Development</p>
 			<p class="xl:mt-2 xl:text-xl">
-				Founder of <a
+				Check out <a
 					target="__blank"
 					class="font-bold text-primary transition-all hover:tracking-wide"
 					href="https://candela-apps.web.app/">Candela Apps 💡</a
@@ -64,12 +64,12 @@
 	<div class="text-justify rounded-xl text-sm xl:text-base">
 		<p in:fly>
 			I'm a creative person with a passion of developing games and learning novel methods to improve
-			my skills. I love studying programming patterns, Rendering, and also enjoy creating XR
-			projects using various tech stack!
+			my skills. I love studying programming patterns, rendering and tinkering with problems. 
 		</p>
 		<p in:fly class="mt-2">
-			Currently studying MTech in NIT Hamirpur, doing my thesis on Procedural Content Generation,
-			using <span class="font-bold text-primary">Wave Function Collapse Algorithm</span> and improving its time and space complexity.
+			Currently working at LILA Games as a Unity Game Developer on an ambitious mobile shooter game.
+			My thesis on <span class="font-bold text-primary">Wave Function Collapse Algorithm</span> just
+			got published! <a href="https://ieeexplore.ieee.org/document/10262419">Check it out</a>
 		</p>
 		<p class="mt-2">
 			<a
