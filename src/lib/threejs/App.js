@@ -224,7 +224,7 @@ export default class App {
     renderMap(mapWidth, mapHeight) {
         //plane with line markings
         const lineMarkingsTexture = getLineMarkings(mapWidth, mapHeight);
-        const planeGeometry = new THREE.PlaneBufferGeometry(mapWidth, mapHeight);
+        const planeGeometry = new THREE.PlaneGeometry(mapWidth, mapHeight);
         const planeMaterial = new THREE.MeshLambertMaterial({
             color: 0x546e90,
             map: lineMarkingsTexture,
@@ -238,7 +238,7 @@ export default class App {
         const islandMiddle = getMiddleIsland();
         const outerField = getOuterField(mapWidth, mapHeight);
 
-        const fieldGeometry = new THREE.ExtrudeBufferGeometry(
+        const fieldGeometry = new THREE.ExtrudeGeometry(
             [islandLeft, islandMiddle, islandRight, outerField],
             { depth: 6, bevelEnabled: false }
         );

@@ -13,7 +13,7 @@ export const frameworks = [
 export const experience = [
     {
         company: 'LILA Games',
-        positin: 'Unity Game Developer',
+        position: 'Unity Game Developer',
         time: 'June 2023 - Present',
         description: 'Working on a mobile shooter game with core gameplay features'
     },
@@ -31,8 +31,8 @@ export const experience = [
     },
     {
         company: 'Catrobat',
-        position: 'GSoC 2021 Mentor',
-        time: 'Jun 2021 - Sep 2021',
+        position: 'GSoC Mentor',
+        time: '2021, 2022, 2023',
         description: 'To guide a student for the project Awesome Demo Game Project by Catrobat'
     },
     {
@@ -52,8 +52,14 @@ export const experience = [
 export const education = [
     {
         instituteName: 'NIT Hamirpur',
+        degree: 'MTech',
+        time: '2022-2023',
+        result: 'CGPA 9.46'
+    },
+    {
+        instituteName: 'NIT Hamirpur',
         degree: 'BTech',
-        time: '2018-Present',
+        time: '2018-2022',
         result: 'CGPA 9.46'
     },
     {

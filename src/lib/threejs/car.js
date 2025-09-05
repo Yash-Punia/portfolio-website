@@ -17,7 +17,7 @@ export function Car() {
 
     //main body
     const main = new THREE.Mesh(
-        new THREE.BoxBufferGeometry(60,30,15),
+        new THREE.BoxGeometry(60,30,15),
         new THREE.MeshLambertMaterial({color: pickRandom(vehicleColors)})
     );
     main.position.z = 12;
@@ -39,7 +39,7 @@ export function Car() {
 
     //cabin of car
     const cabin = new THREE.Mesh(
-        new THREE.BoxBufferGeometry(33, 24, 12),
+        new THREE.BoxGeometry(33, 24, 12),
         [
             new THREE.MeshLambertMaterial({map: carFrontTexture}),
             new THREE.MeshLambertMaterial({map: carBackTexture}),
@@ -58,7 +58,7 @@ export function Car() {
 
 function Wheel() {
     const wheel = new THREE.Mesh(
-        new THREE.BoxBufferGeometry(12,33,12),
+        new THREE.BoxGeometry(12,33,12),
         new THREE.MeshLambertMaterial({color: 0x333333})    
     );
     wheel.position.z = 6;
