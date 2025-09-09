@@ -22,7 +22,7 @@
 		},
 		{
 			data: gamepad,
-			link: 'https://yashpunia.itch.io/'
+			link: '/game'
 		}
 	];
 
@@ -38,7 +38,7 @@
 		/>
 		<div class="ml-4 md:ml-8">
 			<h1 class="font-bold text-2xl md:text-3xl xl:text-4xl">Yash Punia</h1>
-			<p class="xl:mt-2 xl:text-2xl">Gamedev | XR Development</p>
+			<p class="xl:mt-2 xl:text-2xl">Game Developer</p>
 			<p class="xl:mt-2 xl:text-xl">
 				Check out <a
 					target="__blank"
@@ -67,18 +67,26 @@
 			my skills. I love studying programming patterns, rendering and tinkering with problems. 
 		</p>
 		<p in:fly class="mt-2">
-			Currently working at LILA Games as a Unity Game Developer on an ambitious mobile shooter game.
-			My thesis on <span class="font-bold text-primary">Wave Function Collapse Algorithm</span> just
-			got published! <a href="https://ieeexplore.ieee.org/document/10262419">Check it out</a>
+			Currently working at LILA Games as a Unity Game Developer on 
+			<a
+				class="font-bold text-primary cursor-pointer transition-all hover:text-circle-two"
+				href="https://play.google.com/store/apps/details?id=com.lilagames.black&hl=en"
+				target="__blank"
+			>
+				LILA BLACK.
+			</a>
+			My thesis on  
+			<a href="https://ieeexplore.ieee.org/document/10262419" class="font-bold text-primary cursor-pointer transition-all hover:text-circle-two">
+				Wave Function Collapse Algorithm</a> just got published!
 		</p>
 		<p class="mt-2">
 			<a
-				class="font-bold text-primary cursor-pointer transition-all hover:tracking-wide"
+				class="font-bold text-primary cursor-pointer transition-all hover:text-circle-two"
 				href={resumeLink}
 				target="__blank"
 			>
-				Download my resume
-			</a> to know more about me!
+				See Resume
+			</a>
 		</p>
 	</div>
 </div>

@@ -3,10 +3,10 @@
 </script>
 
 <slot />
-<div class="hidden lg:block circle circle-1" style="filter: blur({Math.min(50,y*0.1)}px); opacity: {Math.max(0.2, 0.6-y*0.001)}"/>
-<div class="circle circle-2" style="filter: blur({Math.min(50,y*0.1)}px); opacity: {Math.max(0.2, 0.6-y*0.001)}"/>
-<div class="circle circle-3" style="filter: blur({Math.min(50,y*0.1)}px); opacity: {Math.max(0.2, 0.6-y*0.001)}"/>
-<div class="circle circle-4" style="filter: blur({Math.min(50,y*0.1)}px); opacity: {Math.max(0.2, 0.6-y*0.001)}"/>
+<div class="hidden lg:block circle circle-1" style="opacity: {Math.max(0.1, 0.6-y*0.001)}"/>
+<div class="circle circle-2" style="opacity: {Math.max(0.1, 0.6-y*0.001)}"/>
+<div class="circle circle-3" style="opacity: {Math.max(0.1, 0.6-y*0.001)}"/>
+<div class="circle circle-4" style="opacity: {Math.max(0.1, 0.6-y*0.001)}"/>
 
 <svelte:window bind:scrollY={y} />
 
@@ -20,6 +20,19 @@
 	@tailwind base;
 	@tailwind components;
 	@tailwind utilities;
+
+	:root {
+		--primary: #{$primary};
+		--primary-transparent: #{$primary-transparent};
+		--glass-gradient-to: #{$glass-gradient-to};
+		--glass-gradient-from: #{$glass-gradient-from};
+		--glass-button: #{$glass-button};
+		--circle-one: #{$circle-one};
+		--circle-two: #{$circle-two};
+		--circle-three: #{$circle-three};
+		--dark: #{$dark};
+		--black-transparent: #{$black-transparent};
+	}
 
 	:global(*) {
 		margin: 0;
@@ -48,7 +61,7 @@
 	}
 
 	.circle {
-		position: fixed;
+		position: absolute;
 		background: radial-gradient(at 0% 30%, $circle-one 20%, $circle-two, $circle-three);
 		border-radius: 100%;
 		animation-name: circle;

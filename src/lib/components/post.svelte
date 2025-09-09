@@ -34,7 +34,7 @@
 	}}
     href="/post/{info.slugs[0]}"
 >
-	<div class="bg-glass-container rounded-xl">
+	<div class="bg-black-transparent rounded-xl">
 		<div class="p-4">
 			<h2 class="xl:text-xl">{info.data.title[0].text}</h2>
 			<p class="text-circle-two mb-4">{month[parsedDate.getMonth()]}, {parsedDate.getFullYear()}</p>

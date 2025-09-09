@@ -3,6 +3,7 @@ export const resumeLink = "https://drive.google.com/file/d/1Y8iSn-Xcqkm1cLSLKn7j
 export const frameworks = [
     'C#',
     'Unity3D',
+    'Photon Fusion',
     'C++',
     'WebXR',
     'ARFoundation',
@@ -15,19 +16,19 @@ export const experience = [
         company: 'LILA Games',
         position: 'Unity Game Developer',
         time: 'June 2023 - Present',
-        description: 'Working on a mobile shooter game with core gameplay features'
+        description: 'Working on a mobile extraction shooter game. Responsibe for combat systems including gun play, heal/shield items, movement, networking and meta features.'
     },
     {
         company: 'Goldman Sachs',
         position: 'Summer Analyst',
         time: 'June 2022 - Jul 2022',
-        description: 'Write high quality code, tests and run successful pipelines for intern project'
+        description: 'Write high quality code, tests and run successful pipelines for intern project. Worked on interna Java tools to download multiple files by zipping them up utilizing multithreading'
     },
     {
         company: 'Lucid Labs',
         position: 'Game Developer Intern',
         time: 'Feb 2022 - May 2022',
-        description: 'To complete and finish a complete game using Unity3D and C#'
+        description: 'Worked on mobile puzzle tile based game. Responsible for polishing, reward ads'
     },
     {
         company: 'Catrobat',

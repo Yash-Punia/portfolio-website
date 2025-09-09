@@ -40,7 +40,7 @@
 {#if $projects.length > 0}
 	<nav in:fade class="glass-element p-1 w-3/4 mx-auto my-8 md:w-2/5 xl:w-1/3 xl:my-16  rounded-xl">
 		<div
-			class="bg-glass-container py-2 rounded-xl grid text-sm xl:text-lg text-white grid-flow-col place-items-center"
+			class="bg-black-transparent py-2 rounded-xl grid text-sm xl:text-lg text-white grid-flow-col place-items-center"
 		>
 			{#each buttons as button}
 				<div
@@ -71,7 +71,7 @@
 		class="z-10 glass-element p-1 w-3/4 md:w-2/5 xl:w-1/3 xl:my-16 rounded-xl fixed top-4 left-1/2 -translate-x-1/2"
 	>
 		<div
-			class="bg-glass-container py-2 rounded-xl grid text-sm xl:text-lg text-white grid-flow-col place-items-center"
+			class="bg-black-transparent py-2 rounded-xl grid text-sm xl:text-lg text-white grid-flow-col place-items-center"
 		>
 			{#each buttons as button}
 				<div
