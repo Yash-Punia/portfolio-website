@@ -31,12 +31,12 @@
 	</div>
 	
 	<Education />
-	<div class="w-max shadow-sm transition-all hover:shadow-md hover:-translate-y-1">
+	<!-- <div class="w-max shadow-sm transition-all hover:shadow-md hover:-translate-y-1">
 		<a
 			target="_blank"
 			href={resumeLink}
 			class="glass-element md:text-xs xl:text-xl w-max p-2 rounded-xl transition-all hover:bg-primary-transparent"
 			>Download Resume</a
 		>
-	</div>
+	</div> -->
 </div>
