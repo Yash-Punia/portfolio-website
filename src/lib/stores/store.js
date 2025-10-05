@@ -30,6 +30,10 @@ const fetchData = async () => {
             gamesFetched.push(element)
     })
 
+    projectsFetched.sort((a,b) => a.data.sort_order - b.data.sort_order);
+    gamesFetched.sort((a,b) => a.data.sort_order - b.data.sort_order);
+    // blogPostsFetched.sort((a,b) => a.data.sort_order - b.data.sort_order);
+
     projects.set(projectsFetched);
     posts.set(blogPostsFetched);
     games.set(gamesFetched);

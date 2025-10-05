@@ -67,7 +67,7 @@
 			my skills. I love studying programming patterns, rendering and tinkering with problems. 
 		</p>
 		<p in:fly class="mt-2">
-			Currently working at LILA Games as a Unity Game Developer on 
+			Currently working at LILA Games, where I launched the mobile shooter game
 			<a
 				class="font-bold text-primary cursor-pointer transition-all hover:text-circle-two"
 				href="https://play.google.com/store/apps/details?id=com.lilagames.black&hl=en"
@@ -75,9 +75,9 @@
 			>
 				LILA BLACK.
 			</a>
-			My thesis on  
+			My paper on  
 			<a href="https://ieeexplore.ieee.org/document/10262419" class="font-bold text-primary cursor-pointer transition-all hover:text-circle-two">
-				Wave Function Collapse Algorithm</a> just got published!
+				Wave Function Collapse Algorithm</a> is published and cited on IEEE
 		</p>
 		<p class="mt-2">
 			<a
