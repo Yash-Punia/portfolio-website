@@ -11,7 +11,6 @@ const fetchData = async () => {
     const refResponseJson = await refResponse.json();
     const masterRef = refResponseJson.refs[0].ref;
 
-
     //get the posts
     const docUrl = 'https://yashpunia.cdn.prismic.io/api/v2/documents/search?ref=' + masterRef;
     const docResponse = await fetch(docUrl);

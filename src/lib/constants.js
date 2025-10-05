@@ -22,19 +22,19 @@ export const experience = [
         company: 'Goldman Sachs',
         position: 'Summer Analyst',
         time: 'June 2022 - Jul 2022',
-        description: 'Write high quality code, tests and run successful pipelines for intern project. Worked on interna Java tools to download multiple files by zipping them up utilizing multithreading'
+        description: 'Wrote high quality code, tests and run successful pipelines for intern project. Worked on internal Java tools to download multiple files by zipping them up utilizing multithreading.'
     },
     {
         company: 'Lucid Labs',
         position: 'Game Developer Intern',
         time: 'Feb 2022 - May 2022',
-        description: 'Worked on mobile puzzle tile based game. Responsible for polishing, reward ads'
+        description: 'Worked on mobile puzzle tile based game. Responsible for polishing, reward ads.'
     },
     {
         company: 'Catrobat',
         position: 'GSoC Mentor',
         time: '2021, 2022, 2023',
-        description: 'To guide a student for the project Awesome Demo Game Project by Catrobat'
+        description: 'To guide a student for the project Awesome Demo Game Project by Catrobat.'
     },
     {
         company: 'Ajna Lens',
@@ -55,7 +55,7 @@ export const education = [
         instituteName: 'NIT Hamirpur',
         degree: 'MTech',
         time: '2022-2023',
-        result: 'CGPA 9.46'
+        result: 'CGPA 8.10'
     },
     {
         instituteName: 'NIT Hamirpur',

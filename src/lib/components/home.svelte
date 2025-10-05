@@ -77,7 +77,7 @@
 			</a>
 			My paper on  
 			<a href="https://ieeexplore.ieee.org/document/10262419" class="font-bold text-primary cursor-pointer transition-all hover:text-circle-two">
-				Wave Function Collapse Algorithm</a> is published and cited on IEEE
+				Wave Function Collapse Algorithm</a> is published and cited on IEEE!
 		</p>
 		<p class="mt-2">
 			<a
