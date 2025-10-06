@@ -36,16 +36,16 @@
 			src={profileUrl}
 			alt="me"
 		/>
-		<div class="ml-4 md:ml-8">
+		<div class="ml-4 align-middle md:ml-8">
 			<h1 class="font-bold text-2xl md:text-3xl xl:text-4xl">Yash Punia</h1>
 			<p class="xl:mt-2 xl:text-2xl">Game Developer</p>
-			<p class="xl:mt-2 xl:text-xl">
+			<!-- <p class="xl:mt-2 xl:text-xl">
 				Check out <a
 					target="__blank"
 					class="font-bold text-primary transition-all hover:tracking-wide"
 					href="https://candela-apps.web.app/">Candela Apps 💡</a
 				>
-			</p>
+			</p> -->
 		</div>
 	</div>
 	<div class="flex w-full justify-center gap-4 my-8 xl:my-12">

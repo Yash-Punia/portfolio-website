@@ -15,6 +15,7 @@
 	};
 </script>
 
+<!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
 	class="rounded-xl"
 	bind:this={cardBackground}
@@ -30,7 +31,7 @@
 			alt={info.project_name[0].text}
 		/>
 		<div class="p-4">
-			<h2 class="xl:text-xl">{info.project_name[0].text}</h2>
+			<h2 class="font-bold xl:text-xl">{info.project_name[0].text}</h2>
 			<p class="text-xs xl:text-base">{info.project_description[0].text}</p>
 			<div class="my-4 flex justify-around text-primary text-xs xl:text-base">
 				{#if info.hosted_link.url != null}
