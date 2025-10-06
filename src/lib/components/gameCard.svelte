@@ -24,7 +24,7 @@
 		spotlight(e);
 	}}
 >
-	<div class="bg-red rounded-xl grid-rows-2 grid lg:grid-cols-2  lg:grid-rows-none">
+	<div class="bg-black-transparent rounded-xl grid-rows-2 grid lg:grid-cols-2  lg:grid-rows-none">
 		<img
 			class="rounded-xl  md:rounded-r-none md:rounded-br-none h-full object-cover xl:object-left"
 			src={info.image.url}
